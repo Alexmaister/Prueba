@@ -6,7 +6,7 @@ package Excepciones;
 public class ExcepcionMascota extends Exception{
     public ExcepcionMascota(String mensaje){
 
-        System.out.println(mensaje);
+        super(mensaje);
 
         }
     }
