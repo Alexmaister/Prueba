@@ -1,6 +1,6 @@
 package Clases;
 
-import java.io.Serializable;
+import java.util.*;
 
 /**
  * Created by aortiz on 24/01/2017.
@@ -22,11 +22,13 @@ import java.io.Serializable;
     setDireccion (String d)
     String getCodPostal()
     setCodPostal(String cp)
+    String getNacionalidad()
+    setNacionalidad(String n)
 
 
 * */
-public class Persona implements Cloneable,Comparable<Persona>,Serializable{
-    private static final long serialVersionUID=1l;
+public class Persona implements Cloneable,Comparable<Persona>{
+
     private String nombre;
     private String apellidos;
     private Date fechaNac;
@@ -35,13 +37,134 @@ public class Persona implements Cloneable,Comparable<Persona>,Serializable{
     private String telefonoMovil;
     private String direccion;
     private String codPostal;
-
+    private String nacionalidad;
     //constructor por defecto
-    public Persona(){
+    public Persona(String nacionalidad){
+        this.nacionalidad = nacionalidad;
 
         this.nombre="Default";
         this.apellidos=" ";
-        this.fechaNac=new Date(1,1,1900);
+     //  this.fechaNac=new Date(1,1,1900);
         this.DNI="12345678A";
+        this.telefono=" ";
+        this.telefonoMovil=" ";
+        this.direccion="Desconocida";
+        this.codPostal="Desconocido";
+        this.nacionalidad="Desconocida";
     }
+    public Persona(String n, String a, String dni, Date f, String tlf, String tlfm, String d, String cp, String nacionalidad){
+        this.nombre=n;
+        this.apellidos=a;
+        this.fechaNac=f;
+        this.telefono=tlf;
+        this.telefonoMovil=tlfm;
+        this.direccion=d;
+        this.codPostal=cp;
+        this.DNI=dni;
+        this.nacionalidad = nacionalidad;
+    }
+   public Persona(Persona p){
+        this.nombre=p.getNombre();
+        this.apellidos=p.getApellidos();
+        this.DNI=p.getDNI();
+        this.telefono=p.getTelefono();
+       this.telefonoMovil=p.getTelefonoM();
+       this.direccion=p.getDireccion();
+       this.codPostal=p.getCodPostal();
+       this.nacionalidad = p.getNacionalidad();
+   }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public String getApellidos(){
+        return this.apellidos;
+    }
+
+    public Date getFechaNac(){
+        return this.fechaNac;
+    }
+    public String getDNI(){
+        return this.DNI;
+    }
+    public String getTelefono(){
+        return this.telefono;
+    }
+    public String getTelefonoM(){
+        return this.telefonoMovil;
+    }
+    public String getDireccion(){
+        return this.direccion;
+    }
+    public String getCodPostal(){
+        return this.codPostal;
+    }
+    public String getNacionalidad(){
+        return this.nacionalidad;
+    }
+    public void setNombre(String n){
+        this.nombre=n;
+    }
+    public void setApellidos(String a){
+        this.apellidos=a;
+    }
+    public void setFechaNac(Date f){
+        this.fechaNac=f;
+    }
+    public void setDNI(String dni){
+        this.DNI=dni;
+    }
+    public void setTelefono(String tlf){
+        this.telefono=tlf;
+    }
+    public void setTelefonoM(String tlfm){
+        this.telefonoMovil=tlfm;
+    }
+    public void setDireccion(String d){
+        this.direccion=d;
+    }
+    public void setCodPostal(String cp){
+        this.codPostal=cp;
+    }
+    public void setNacionalidad(String nac){
+        this.nacionalidad=nac;
+    }
+
+    @Override
+    public Persona clone(){
+        Persona clon=null;
+        try{
+            clon=(Persona)super.clone();
+        }catch(CloneNotSupportedException ce){
+            System.out.println("LaPersona no se pudo clonar"+ce);
+        }
+        return clon;
+    }
+    @Override
+    public int compareTo(Persona p){
+        int comparacion;
+        comparacion=this.fechaNac.compareTo(p.fechaNac);
+        return comparacion;
+    }
+    @Override
+    public boolean equals(Object obj){
+       boolean comparacion=false;
+        if(obj!= null && obj instanceof Persona){
+            Persona p=(Persona) obj;
+            if(this.getDNI()==p.getDNI() && this.getNacionalidad()==p.getNacionalidad())
+                comparacion=true;
+        }
+        return comparacion;
+    }
+    @Override
+    public String toString(){
+        return nombre+","+apellidos+","+fechaNac.toString()+","+DNI+","+telefono+","+telefonoMovil+","+direccion+
+                ","+codPostal+","+nacionalidad;
+    }
+    @Override
+    public int hashCode(){
+        return (int)( Double.parseDouble(nombre)/Double.parseDouble(DNI)+3/(Double.parseDouble(codPostal)+2));
+    }
+
 }

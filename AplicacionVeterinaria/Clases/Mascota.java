@@ -48,11 +48,11 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
 
     public Mascota(Mascota mascota){
 
-        this.nombre=mascota.nombre;
-        this.sexo=mascota.sexo;
-        this.fechaNacimiento=mascota.fechaNacimiento;
-        this.raza=mascota.raza;
-        this.especie=mascota.especie;
+        this.nombre=mascota.getNombre();
+        this.sexo=mascota.getSexo();
+        this.fechaNacimiento=mascota.getFechaNacimiento();
+        this.raza=mascota.getRaza();
+        this.especie=mascota.getEspecie();
     }
 
     public String getNombre(){
@@ -67,7 +67,7 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
     public String getRaza(){
         return this.raza;
     }
-    public String getESpecie(){
+    public String getEspecie(){
         return this.especie;
     }
     public void setNombre(String nombre){
