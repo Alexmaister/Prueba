@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f98afa9-d364-481f-80af-3e9ecbe7594f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Enfermedad.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionVeterinaria.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Test/EnfermedadTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AplicacionVeterinaria.iws" />
@@ -49,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Enfermedad.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Enfermedad.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Enfermedad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="146" column="83" selection-start-line="146" selection-start-column="83" selection-end-line="146" selection-end-column="83" />
+            <state relative-caret-position="3362">
+              <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
               <folding>
                 <element signature="e#1493#1494#0" expanded="true" />
                 <element signature="e#1525#1526#0" expanded="true" />
@@ -82,6 +80,16 @@
                 <element signature="e#3459#3460#0" expanded="true" />
                 <element signature="e#3546#3547#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnfermedadTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/EnfermedadTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,6 +125,7 @@
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionVeterinaria.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Enfermedad.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/EnfermedadTest.java" />
       </list>
     </option>
   </component>
@@ -282,7 +291,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.PersonaTest">
+  <component name="RunManager" selected="Application.EnfermedadTest">
     <configuration default="false" name="MiniMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -331,6 +340,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Test.PersonaTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AplicacionVeterinaria" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="EnfermedadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Test.EnfermedadTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -757,16 +786,18 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.MiniMain" />
       <item index="1" class="java.lang.String" itemvalue="Application.MascotaTest" />
       <item index="2" class="java.lang.String" itemvalue="Application.PersonaTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.EnfermedadTest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.PersonaTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MascotaTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MiniMain" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.EnfermedadTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PersonaTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MascotaTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MiniMain" />
       </list>
     </recent_temporary>
   </component>
@@ -786,7 +817,7 @@
       <workItem from="1485250269311" duration="5855000" />
       <workItem from="1485505182705" duration="1386000" />
       <workItem from="1485761170970" duration="11813000" />
-      <workItem from="1485847959890" duration="14672000" />
+      <workItem from="1485847959890" duration="16197000" />
     </task>
     <task id="LOCAL-00001" summary="CLase MAscota">
       <created>1485770420139</created>
@@ -809,11 +840,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485855710089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Clase enfermedad">
+      <created>1485866897789</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1485866897789</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40183000" />
+    <option name="totallyTimeSpent" value="41708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -831,7 +869,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -861,7 +899,8 @@
     <MESSAGE value="CLase MAscota" />
     <MESSAGE value="clase persona" />
     <MESSAGE value="Gestion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gestion" />
+    <MESSAGE value="Clase enfermedad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clase enfermedad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1062,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Enfermedad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="146" column="83" selection-start-line="146" selection-start-column="83" selection-end-line="146" selection-end-column="83" />
+        <state relative-caret-position="3362">
+          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
           <folding>
             <element signature="e#1493#1494#0" expanded="true" />
             <element signature="e#1525#1526#0" expanded="true" />
@@ -1092,6 +1131,14 @@
             <element signature="e#3459#3460#0" expanded="true" />
             <element signature="e#3546#3547#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/EnfermedadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
