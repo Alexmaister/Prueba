@@ -39,12 +39,11 @@ public class Persona implements Cloneable,Comparable<Persona>{
     private String codPostal;
     private String nacionalidad;
     //constructor por defecto
-    public Persona(String nacionalidad){
-        this.nacionalidad = nacionalidad;
+    public Persona(){
 
         this.nombre="Default";
         this.apellidos=" ";
-     //  this.fechaNac=new Date(1,1,1900);
+         this.fechaNac=new Date(1,1,1900);
         this.DNI="12345678A";
         this.telefono=" ";
         this.telefonoMovil=" ";
@@ -159,12 +158,12 @@ public class Persona implements Cloneable,Comparable<Persona>{
     }
     @Override
     public String toString(){
-        return nombre+","+apellidos+","+fechaNac.toString()+","+DNI+","+telefono+","+telefonoMovil+","+direccion+
+        return nombre+","+apellidos+","+fechaNac+","+DNI+","+telefono+","+telefonoMovil+","+direccion+
                 ","+codPostal+","+nacionalidad;
     }
     @Override
     public int hashCode(){
-        return (int)( Double.parseDouble(nombre)/Double.parseDouble(DNI)+3/(Double.parseDouble(codPostal)+2));
+        return DNI.charAt(5)+3/codPostal.hashCode();
     }
 
 }

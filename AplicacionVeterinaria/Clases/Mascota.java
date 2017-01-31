@@ -2,6 +2,7 @@ package Clases;
 
 
 import java.io.*;
+import java.sql.Time;
 import java.util.*;
 /**
  * Created by aortiz on 17/01/2017.
@@ -116,9 +117,7 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
     public int hashCode(){
         int codigo;
 
-        codigo=(int)(Double.parseDouble(nombre)*(27/Double.parseDouble(this.raza))+(Double.parseDouble(this.fechaNacimiento.toString())*Double.parseDouble(this.especie))
-        +2*(Double.parseDouble(nombre)+sexo));
-
+        codigo=(27+fechaNacimiento.getDay()/2*(int)(this.sexo))*fechaNacimiento.getMonth();
         return codigo;
     }
 }
