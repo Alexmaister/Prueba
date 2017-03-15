@@ -1,4 +1,7 @@
 package Clases;
+import Excepciones.ExcepcionEnfermedad;
+import com.sun.javafx.binding.StringFormatter;
+
 
 /**
  * Created by aortiz on 31/01/2017.
@@ -35,14 +38,15 @@ public class Enfermedad implements Cloneable,Comparable<Enfermedad>{
         this.gravedad="Leve";
     }
     //constructor por parametros
-    public Enfermedad(String tipo,String nombre,String efecto,String sintomas,String remedio,String gravedad){
-
-        this.tipo=tipo;
-        this.nombre=nombre;
-        this.efecto=efecto;
-        this.remedio=remedio;
-        this.sintomas=sintomas;
-        this.gravedad=gravedad;
+    public Enfermedad(String tipo,String nombre,String efecto,String sintomas,String remedio,String gravedad)throws ExcepcionEnfermedad{
+        if(gravedad.equals("Leve") ||gravedad.equals("Grave")|| gravedad.equals("Muy Grave")) {
+            this.tipo = tipo;
+            this.nombre = nombre;
+            this.efecto = efecto;
+            this.remedio = remedio;
+            this.sintomas = sintomas;
+            this.gravedad = gravedad;
+        }else throw new ExcepcionEnfermedad("La gravedad debe ser: Leve, Grave o Muy Grave");
     }
     //constructor d copia
     public Enfermedad(Enfermedad e){
@@ -88,8 +92,9 @@ public class Enfermedad implements Cloneable,Comparable<Enfermedad>{
     public void setRemedio(String remedio){
         this.remedio=remedio;
     }
-    public void setGravedad(String gravedad){
-        this.gravedad=gravedad;
+    public void setGravedad(String gravedad)throws ExcepcionEnfermedad{
+        if(gravedad.equals("Leve") ||gravedad.equals("Grave")|| gravedad.equals("Muy Grave"))this.gravedad=gravedad;
+        else throw new ExcepcionEnfermedad("La gravedad debe ser: Leve, Grave o Muy Grave");
     }
     @Override
     public Enfermedad clone() {
@@ -101,6 +106,9 @@ public class Enfermedad implements Cloneable,Comparable<Enfermedad>{
         }
         return e;
     }
+
+    /*Criterio de comparacion: por Gravedad Muy Grave la mayor y leve la menor
+    * */
     @Override
     public int compareTo(Enfermedad e){
         int comparacion=0;
@@ -132,19 +140,21 @@ public class Enfermedad implements Cloneable,Comparable<Enfermedad>{
     public String toString(){
         return tipo+","+nombre+","+efecto+","+sintomas+","+remedio+","+gravedad;
     }
+    /*Criterio de igualdad: por la gravedad de la enfermedad
+    * */
     @Override
     public boolean equals(Object obj){
         boolean resultado=false;
         if(obj!=null && obj instanceof Enfermedad) {
             Enfermedad e = (Enfermedad) obj;
-            resultado=(this.tipo==e.getTipo()&& this.nombre==e.getNombre() && this.gravedad==e.getGravedad())?true:false;
+            resultado=(this.gravedad.equals(e.getGravedad()));
             }
         return resultado;
     }
     @Override
     public int hashCode(){
         int code=0;
-        code=nombre.hashCode()+gravedad.hashCode()/tipo.hashCode()+super.hashCode();
+        code=nombre.hashCode()+gravedad.hashCode()/tipo.hashCode()+super.hashCode()*15;
         return code;
     }
 }
