@@ -143,7 +143,7 @@ public class Persona implements Cloneable,Comparable<Persona>{
     @Override
     public int compareTo(Persona p){
         int comparacion;
-        comparacion=this.fechaNac.compareTo(p.fechaNac);
+        comparacion=this.getDNI().compareTo(p.getDNI());
         return comparacion;
     }
     @Override
@@ -151,7 +151,7 @@ public class Persona implements Cloneable,Comparable<Persona>{
        boolean comparacion=false;
         if(obj!= null && obj instanceof Persona){
             Persona p=(Persona) obj;
-            if(this.getDNI()==p.getDNI() && this.getNacionalidad()==p.getNacionalidad())
+            if(this.getDNI()==p.getDNI())
                 comparacion=true;
         }
         return comparacion;

@@ -1,4 +1,7 @@
 package Clases;
+import Excepciones.ExcepcionFecha;
+import java.lang.*;
+import java.util.Objects;
 
 /**
  * Created by Ale on 10/02/2017.
@@ -26,50 +29,51 @@ int diferenciaFechas(Fecha f)
 avanzarDias(int n)
 retrasarDias(int n)
 * */
-public class Fecha {
+public class Fecha implements Cloneable,Comparable<Fecha>{
 
     private static final String AM="AM", PM="PM";
 
     private int dia,mes,año;
-    private int hora,minutos,segundos;
 
-    private boolean formatoAM;
-
-
+    //constructor por defecto
     public Fecha(){
 
         this.dia=1;
         this.mes=1;
         this.año=1990;
-        this.hora=0;
-        this.minutos=0;
-        this.segundos=01;
-        this.formatoAM=false;
+
 
     }
+    //constructor por parametros
+    public Fecha(int d, int m, int a) {
 
-    public Fecha(int d, int m, int a){
-        this.dia=d;
-        this.mes=m;
-        this.año=a;
-        this.hora=0;
-        this.minutos=0;
-        this.segundos=01;
-        this.formatoAM=false;
+        this();
+        if (!validarFecha(d, m, a)) {
+            this.dia = d;
+            this.mes = m;
+            this.año = a;
+        }
     }
-    public Fecha(boolean f,int h, int m, int s){
+    //constructor de copia
+    public Fecha(Fecha f){
 
-        this.hora=h;
-        this.minutos=m;
-        this.segundos=s;
-        this.formatoAM=f;
-
-    }
-    public Fecha(int d, int m, int a, int h, int min, int s){
-
+        this.dia=f.getDia();
+        this.mes=f.getMes();
+        this.año=f.getAño();
     }
 
-    //metodos consultores
+
+    //metodos modificadores
+    public void modificarFecha(int d,int m,int a)throws ExcepcionFecha {
+        if (validarFecha(d, m, a)){
+            this.dia = d;
+            this.mes = m;
+            this.año = a;
+        }else
+            throw new ExcepcionFecha("Los parametros no coinciden con una fecha valida");
+    }
+
+    //metodos modificadores
     public int getDia(){
         return this.dia;
     }
@@ -79,45 +83,137 @@ public class Fecha {
     public int getAño(){
         return this.año;
     }
-    /*cabecera: boolean getFormatoAM()
-      descripción:procedimiento que devuelve el formato en el que se encuentra la hora
-      entradas:ninguna;
-      salidas: un buleano;
-      precondiciones:ninguna;
-      postcondiciones:se devuelve un buleano asociado al nombre,que sera true si la hora esta en el formato AM(12 horas)
-                      o false si esta en el formato PM(24 horas)
-     */
-    public boolean getFormato(){
-        return this.formatoAM;
-    }
-    public int getHora(){
-        return this.hora;
-    }
-    public int getMinutos(){
-        return this.minutos;
-    }
-    public int getSegundos(){
-        return this.segundos;
+
+
+    public int compareTo(Fecha f){
+        int resultado=0;
+
+            if(f.getAño()==this.año)
+                if(f.getMes()==this.mes)
+                    if(f.getDia()>this.dia)
+                        resultado=-1;
+                    else
+                        resultado=(f.getDia()<this.dia)?1:0;
+                else
+                    resultado=(f.getMes()>this.mes)?-1:1;
+            else
+                resultado=(f.getAño()>this.año)?-1:1;
+
+        return resultado;
     }
 
-    //metodos modificadores
-    public void setDia(int d){
-        this.dia=d;
+    @Override
+    public Fecha clone(){
+        Fecha fechaClon=null;
+        try{
+            fechaClon= (Fecha) super.clone();
+        }catch (CloneNotSupportedException err){
+            err.printStackTrace();
+        }
+
+
+        return fechaClon;
     }
-    public void setMes(int m){
-        this.mes=m;
+
+    /*cabecera: public boolean validarFecha(int d, int m, int a)
+    descripcion: funcion que validara una fecha
+    entradas: tres enteros
+    salidas: un booleano
+    precondiciones:ninguna
+    postcondiciones:se devolvera true en caso de que la fecha sea valida y false en el contrario
+    * */
+    public boolean validarFecha(int d,int m,int a){
+        boolean validacion =false;
+        if (m >= 1 && m <= 12)
+            switch (m) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    if (d >= 1 && d <= 30)
+                        validacion = true;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    if (d >= 1 && d <= 30)
+                        validacion = true;
+                    break;
+                case 2:
+                    if ((a % 400 == 0) || ((a % 4 == 0) && (a % 100 != 0)))
+                        if (d >= 1 && d <= 29)
+                            validacion = true;
+                        else if (d >= 1 && d <= 28)
+                            validacion = true;
+                    break;
+            }
+            return validacion;
     }
-    public void setAño(int a){
-        this.año=a;
+
+    @Override
+    public boolean equals(Object obj){
+        boolean igualdad=false;
+        if(obj !=null && obj instanceof Fecha)
+            igualdad= (this.compareTo((Fecha)obj)==0)?true:false;
+
+        return igualdad;
     }
-    /*cabecera: void cambiarFormato()
-      decripción: funcion que modificará el formato;
-      entradas: un buleano;
-      salidas: ninguna;
-      precondiciones: el booleano debe ser distinto de null;
-      postcondiciones: cambiara el formato, en caso de que este en formatoAM
-                       y la constante sea PM la hora  tambien cambiara;
-     */
+
+    @Override
+    public String toString(){
+
+        return this.getDia()+"/"+getMes()+"/"+this.getAño();
+    }
+
+    @Override
+    public int hashCode(){
+        return (this.getDia()*this.getMes()/21)*(this.getAño()/this.toString().hashCode());
+    }
+        /*cabecera: public boolean validarFecha(int d, int m, int a)
+    descripcion: funcion que validara una fecha
+    entradas: tres enteros
+    salidas: un booleano
+    precondiciones:ninguna
+    postcondiciones:se devolvera true en caso de que la fecha sea valida y false en el contrario
+    * */
+
+    public boolean validarFecha(Fecha f){
+        boolean validacion =false;
+        if (f.getMes() >= 1 &&f.getMes() <= 12)
+            switch (f.getMes()) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    if (f.getDia() >= 1 && f.getDia() <= 30)
+                        validacion = true;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    if (f.getDia() >= 1 && f.getDia() <= 30)
+                        validacion = true;
+                    break;
+                case 2:
+                    if ((f.getAño() % 400 == 0) || ((f.getAño() % 4 == 0) && (f.getAño() % 100 != 0)))
+                        if (f.getDia() >= 1 && f.getDia() <= 29)
+                            validacion = true;
+                        else if (f.getDia() >= 1 && f.getDia() <= 28)
+                            validacion = true;
+                    break;
+            }
+        return validacion;
+    }
+
+
 
 
 }
