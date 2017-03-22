@@ -1,6 +1,8 @@
 package Clases;
 
 
+import Excepciones.ExcepcionMascota;
+
 import java.io.*;
 import java.sql.Time;
 import java.util.*;
@@ -20,12 +22,12 @@ Persona getDueño()
 setDueño(Persona Dueño)
 long getSerialVersionUID()
  */
-public class Mascota implements Cloneable,Comparable<Mascota> {
+public class Mascota implements Cloneable{
 
 
     private String nombre;
     private char sexo;
-    private Date fechaNacimiento;
+    private Fecha fechaNacimiento;
     private String raza;
     private String especie;
 
@@ -34,12 +36,12 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
 
         nombre="Default";
         sexo='M';
-        fechaNacimiento=new Date(1,1,1900);
+        fechaNacimiento=new Fecha(1,1,1900);
         raza="Perro";
         especie="Mamifero";
     }
 
-    public Mascota(String nombre, char sexo, Date fecha, String raza, String especie){
+    public Mascota(String nombre, char sexo, Fecha fecha, String raza, String especie){
         this.nombre=nombre;
         this.sexo=sexo;
         this.fechaNacimiento=fecha;
@@ -62,7 +64,8 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
     public char getSexo(){
         return this.sexo;
     }
-    public Date getFechaNacimiento(){
+    //patron de alegacion -- no implementado --fecha deberia ser un tipo ya q se trata en conjunto como uno solo
+    public Fecha getFechaNacimiento(){
         return this.fechaNacimiento;
     }
     public String getRaza(){
@@ -74,7 +77,7 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
-    public void setFechaNacimiento(Date f){
+    public void setFechaNacimiento(Fecha f){
         this.fechaNacimiento=f;
     }
     public void setRaza(String raza){
@@ -83,7 +86,11 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
     public void setEspecie(String especie){
         this.especie=especie;
     }
-
+    public void setSexo(char s)throws ExcepcionMascota{
+        if((s!='M' && s!='H') ||(s!='m' && s!='h'))
+            this.sexo=s;
+        else throw new ExcepcionMascota("El seo debe ser M o F");
+    }
     @Override
     public Mascota clone(){
         Mascota copy=null;
@@ -94,12 +101,7 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
         }
         return copy;
     }
-    @Override
-    public int compareTo(Mascota m){
-        int comparacion;
-        comparacion=this.fechaNacimiento.compareTo(m.fechaNacimiento);
-        return comparacion;
-    }
+
     @Override
     public boolean equals(Object obj){
         boolean resultado=false;
@@ -117,7 +119,7 @@ public class Mascota implements Cloneable,Comparable<Mascota> {
     public int hashCode(){
         int codigo;
 
-        codigo=(27+fechaNacimiento.getDay()/2*(int)(this.sexo))*fechaNacimiento.getMonth();
+        codigo=(27+fechaNacimiento.getDia()/2*(int)(this.sexo))*fechaNacimiento.getMes();
         return codigo;
     }
 }

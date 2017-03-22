@@ -1,6 +1,6 @@
 package Test;
 
-import Clases.Mascota;
+import Clases.*;
 import java.util.*;
 /**
  * Created by aortiz on 30/01/2017.
@@ -10,12 +10,12 @@ public class MascotaTest {
        // long ti=System.currentTimeMillis();
         Mascota m=new Mascota();
         System.out.println(m.toString());
-        Date fecha=new Date(3,2,1993);
-        Mascota m1 = new Mascota("Pepito",'M',fecha,"Mastin","Perro");
+        Fecha fecha=new Fecha(3,2,1993);
+        Mascota m1 = new Mascota("Pepito",'M',new Fecha(),"Mastin","Perro");
         Mascota m2=new Mascota(m1);
         System.out.println(m2.toString());
         m.setNombre("Alejandro");
-        m.setFechaNacimiento(new Date(3,2,1993));
+        m.setFechaNacimiento(new Fecha(3,2,1993));
         m.setRaza("Humano");
         m.setEspecie("Mamifero");
         System.out.println(m.getNombre()+m.getEspecie()+m.getRaza()+m.getFechaNacimiento()+m.getSexo());
