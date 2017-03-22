@@ -19,7 +19,7 @@ public class MascotaTest {
         m.setRaza("Humano");
         m.setEspecie("Mamifero");
         System.out.println(m.getNombre()+m.getEspecie()+m.getRaza()+m.getFechaNacimiento()+m.getSexo());
-        System.out.println(m.compareTo(m1));
+
         System.out.println(m.equals(m1));
         System.out.println(m.hashCode());
         //long tf=System.currentTimeMillis();
