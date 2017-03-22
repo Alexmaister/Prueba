@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c4d58ff-879d-4fa7-ac84-c5910399e9e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Vacuna.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Vacuna.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -614,7 +613,7 @@
       <workItem from="1490010587843" duration="537000" />
       <workItem from="1490093299818" duration="3339000" />
       <workItem from="1490171567167" duration="6225000" />
-      <workItem from="1490186835832" duration="1285000" />
+      <workItem from="1490186835832" duration="1336000" />
     </task>
     <task id="LOCAL-00001" summary="x">
       <created>1490010672199</created>
@@ -651,15 +650,22 @@
       <option name="project" value="LOCAL" />
       <updated>1490185882250</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Constructores metodos mod,y cons vacuna !!Preguntar a asun">
+      <created>1490188157731</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490188157731</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18752000" />
+    <option name="totallyTimeSpent" value="18803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -703,7 +709,8 @@
     <MESSAGE value="Avance hasta clase vacuna" />
     <MESSAGE value="arreglo test mascota" />
     <MESSAGE value="atributos y constructor por defecto vacuna" />
-    <option name="LAST_COMMIT_MESSAGE" value="atributos y constructor por defecto vacuna" />
+    <MESSAGE value="Constructores metodos mod,y cons vacuna !!Preguntar a asun" />
+    <option name="LAST_COMMIT_MESSAGE" value="Constructores metodos mod,y cons vacuna !!Preguntar a asun" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
