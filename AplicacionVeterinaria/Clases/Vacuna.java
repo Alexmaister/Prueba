@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by aortiz on 22/03/2017.
  */
-public class Vacuna {
+public class Vacuna implements  Cloneable{
 
     private String nombre;
     private double dosis;
@@ -118,6 +118,34 @@ public class Vacuna {
 
         this.enfermedades=new ArrayList<Enfermedad>(Arrays.asList(es));
 
+    }
+
+    @Override
+    public Vacuna clone(){
+        Vacuna clon=null;
+        try{
+            clon =(Vacuna)super.clone();
+            clon.enfermedades= (List<Enfermedad>) ((ArrayList<Enfermedad>)enfermedades).clone();
+        }catch(CloneNotSupportedException e){
+            System.out.println(e);
+        }
+        return clon;
+    }
+
+    @Override
+    public String toString(){
+        return this.getNombre()+","+this.getConcentracion()+","+this.getDosis()+","+this.getAgenteAc()+","+this.getEnfermedad().toString();
+    }
+
+    @Override
+    public boolean equals(Object obj){
+
+        return ((obj!=null && obj instanceof Vacuna )&& ((Vacuna)obj).getEnfermedad().equals(this.getEnfermedad()))?true:false;
+    }
+
+    @Override
+    public int hashCode(){
+        return (((this.getNombre().hashCode()*5)/(this.getEnfermedad().hashCode())-(int)this.dosis)*-17);
     }
 
 }
