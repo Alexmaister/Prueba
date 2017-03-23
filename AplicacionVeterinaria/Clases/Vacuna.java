@@ -13,7 +13,7 @@ public class Vacuna {
     private double concentracion;
     private String agenteAc;
 
-    Vacuna() {
+    public Vacuna() {
         nombre = "Rabia";
         dosis = 0.50;
         enfermedades = new ArrayList<Enfermedad>();
@@ -79,6 +79,44 @@ public class Vacuna {
         for(Enfermedad f:fs){
             this.enfermedades.add(f);
         }
+
+    }
+    public void borrarEnfermedades(){
+        this.enfermedades=new ArrayList<Enfermedad>();
+    }
+    public int buscarEnfermedad(String n){
+        int resultado=0;
+         for(Enfermedad e:this.enfermedades)
+             if(e.getNombre().equals(n))
+                 resultado=this.enfermedades.indexOf(e);
+
+        return  resultado;
+    }
+    public  Enfermedad obtenerEnfermedad(String n){
+        Enfermedad e=null;
+       for(Enfermedad f:this.enfermedades){
+           if(f.getNombre().equals(n))
+                e=new Enfermedad(f);
+
+       }
+       return e;
+    }
+    public boolean containsEnfermedad(String n){
+        boolean busqueda=false;
+        for(Enfermedad f:this.enfermedades)
+            if(f.getNombre().equals(n))
+                busqueda=true;
+        return busqueda;
+    }
+    public void eliminarEnfermedad(String n){
+        int pos=-1;
+        pos=buscarEnfermedad(n);
+        this.enfermedades.remove(pos);
+
+    }
+    public void cambiarEnfermedades(Enfermedad[] es){
+
+        this.enfermedades=new ArrayList<Enfermedad>(Arrays.asList(es));
 
     }
 

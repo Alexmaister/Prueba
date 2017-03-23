@@ -1,14 +1,12 @@
 package Clases;
-
-
 import Excepciones.ExcepcionMascota;
 
-import java.io.*;
-import java.sql.Time;
-import java.util.*;
+
 /**
  * Created by aortiz on 17/01/2017.
  */
+
+
 /*INTERFAZ:
 String getNombre()
 setNombre(String nombre)
