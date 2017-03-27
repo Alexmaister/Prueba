@@ -18,7 +18,7 @@ String getRaza()
 setRaza(String raza)
 Persona getDueño()
 setDueño(Persona Dueño)
-long getSerialVersionUID()
+
  */
 public class Mascota implements Cloneable{
 
