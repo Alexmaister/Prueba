@@ -16,9 +16,7 @@ Date getFechaNac()
 setFechaNac(Date fecha)
 String getRaza()
 setRaza(String raza)
-//no se seguira el patron de alegacion
-Persona getDueño()
-setDueño(Persona Dueño)
+
 
  */
 public class Mascota implements Cloneable{
@@ -29,7 +27,7 @@ public class Mascota implements Cloneable{
     private Fecha fechaNacimiento;
     private String raza;
     private String especie;
-    private Persona dueño;
+
 
     public Mascota(){
 
@@ -38,7 +36,7 @@ public class Mascota implements Cloneable{
         fechaNacimiento=new Fecha(1,1,1900);
         raza="Perro";
         especie="Mamifero";
-        dueño=new Persona();
+
     }
 
     public Mascota(String nombre, char sexo, Fecha fecha, String raza, String especie,Persona p){
@@ -47,7 +45,7 @@ public class Mascota implements Cloneable{
         this.fechaNacimiento=fecha;
         this.raza=raza;
         this.especie=especie;
-        this.dueño=new Persona(p);
+
     }
 
     public Mascota(Mascota mascota){
@@ -57,7 +55,7 @@ public class Mascota implements Cloneable{
         this.fechaNacimiento=mascota.getFechaNacimiento();
         this.raza=mascota.getRaza();
         this.especie=mascota.getEspecie();
-        this.dueño=mascota.getDueño();
+
     }
 
     public String getNombre(){
@@ -76,8 +74,7 @@ public class Mascota implements Cloneable{
     public String getEspecie(){
         return this.especie;
     }
-    public Persona getDueño(){return this.dueño;}
-    public void setDueño(Persona d){this.dueño=new Persona(d);}
+
     public void setNombre(String nombre){
         this.nombre=nombre;
     }

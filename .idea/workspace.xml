@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" line="162" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" line="177" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c4d58ff-879d-4fa7-ac84-c5910399e9e1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXDueño.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXDueño.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXDueño.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXEscpecie.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXEscpecie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXNombre.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXNombre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXRaza.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXRaza.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -29,7 +28,45 @@
     <favorites_list name="Veterinaria" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GestionClientes.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fecha.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+              <folding>
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1184">
+              <caret line="118" column="70" lean-forward="false" selection-start-line="118" selection-start-column="70" selection-end-line="118" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PersonaTest.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/Pruebas.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/PersonaComparadorApellidosNombre.java" />
@@ -60,11 +96,13 @@
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/MascotaTest.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/VacunaTest.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Vacuna.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXDueño.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXEscpecie.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXNombre.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/MascotaComparadorXRaza.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java" />
       </list>
     </option>
   </component>
@@ -118,6 +156,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AplicacionVeterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AplicacionVeterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gestion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AplicacionVeterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Excepciones" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,7 +723,7 @@
       <workItem from="1490186835832" duration="1364000" />
       <workItem from="1490265953857" duration="3047000" />
       <workItem from="1490302430744" duration="2426000" />
-      <workItem from="1490608535736" duration="868000" />
+      <workItem from="1490608535736" duration="3421000" />
     </task>
     <task id="LOCAL-00001" summary="x">
       <created>1490010672199</created>
@@ -707,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490608787688</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Terminados Comparadores de Mascota">
+      <created>1490609434684</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1490609434684</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25172000" />
+    <option name="totallyTimeSpent" value="27725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -770,7 +851,8 @@
     <MESSAGE value="Constructores metodos mod,y cons vacuna !!Preguntar a asun" />
     <MESSAGE value="Metodos manejo de enfermedades en clase vacuna" />
     <MESSAGE value="Completar Comparadores de Mascota" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completar Comparadores de Mascota" />
+    <MESSAGE value="Terminados Comparadores de Mascota" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminados Comparadores de Mascota" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -854,13 +936,8 @@
         <state relative-caret-position="1258">
           <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1669#1670#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1725#1726#0" expanded="false" />
-            <element signature="e#4167#4168#0" expanded="false" />
-            <element signature="e#4265#4266#0" expanded="false" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -890,13 +967,8 @@
         <state relative-caret-position="1326">
           <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1669#1670#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1725#1726#0" expanded="false" />
-            <element signature="e#4167#4168#0" expanded="false" />
-            <element signature="e#4265#4266#0" expanded="false" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,34 +998,13 @@
         <state relative-caret-position="1258">
           <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1669#1670#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1725#1726#0" expanded="false" />
-            <element signature="e#4167#4168#0" expanded="false" />
-            <element signature="e#4265#4266#0" expanded="false" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1669#1670#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1725#1726#0" expanded="false" />
-            <element signature="e#4167#4168#0" expanded="false" />
-            <element signature="e#4265#4266#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PersonaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -963,18 +1014,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Comparadores/PersonaComparadorApellidosNombre.java" />
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/Pruebas.java" />
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1595">
-          <caret line="118" column="70" lean-forward="false" selection-start-line="118" selection-start-column="70" selection-end-line="118" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2631#2632#0" expanded="false" />
-            <element signature="e#2671#2672#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/MascotaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -1006,9 +1045,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,9 +1054,9 @@
         <state relative-caret-position="153">
           <caret line="9" column="58" lean-forward="false" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,9 +1066,9 @@
         <state relative-caret-position="34">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#227#228#0" expanded="false" />
+            <element signature="e#290#291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1041,19 +1078,50 @@
         <state relative-caret-position="34">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#224#225#0" expanded="false" />
+            <element signature="e#283#284#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="79" column="62" lean-forward="false" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+        <state relative-caret-position="-267">
+          <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding>
             <element signature="method#setSexo#0;class#Mascota#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="118" column="70" lean-forward="false" selection-start-line="118" selection-start-column="70" selection-end-line="118" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+          <folding>
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
