@@ -42,10 +42,9 @@ public class Persona implements Cloneable,Comparable<Persona>{
     private String nacionalidad;
     //constructor por defecto
     public Persona(){
-
         this.nombre="Default";
         this.apellidos=" ";
-         this.fechaNac=new Fecha(1,1,1900);
+        this.fechaNac=new Fecha(1,1,1900);
         this.DNI="12345678A";
         this.telefono=" ";
         this.telefonoMovil=" ";
@@ -67,12 +66,14 @@ public class Persona implements Cloneable,Comparable<Persona>{
    public Persona(Persona p){
         this.nombre=p.getNombre();
         this.apellidos=p.getApellidos();
+        this.fechaNac=p.getFechaNac();
+
         this.DNI=p.getDNI();
         this.telefono=p.getTelefono();
-       this.telefonoMovil=p.getTelefonoM();
-       this.direccion=p.getDireccion();
-       this.codPostal=p.getCodPostal();
-       this.nacionalidad = p.getNacionalidad();
+        this.telefonoMovil=p.getTelefonoM();
+        this.direccion=p.getDireccion();
+        this.codPostal=p.getCodPostal();
+        this.nacionalidad = p.getNacionalidad();
    }
 
     public String getNombre(){

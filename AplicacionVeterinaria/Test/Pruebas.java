@@ -1,5 +1,7 @@
 package Test;
 import Clases.*;
+import Gestion.GestionClientes;
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -28,5 +30,8 @@ public class Pruebas {
         List<Map.Entry<Persona,Mascota>> mapaList=new LinkedList<Map.Entry<Persona, Mascota>>(mapa.entrySet());
         System.out.println("Mapa como List");
         System.out.println(mapaList.toString());
+        GestionClientes gestion=new GestionClientes();
+        System.out.println("\n\n Esteeeeeee");
+        System.out.println(gestion.buscarClienteXDNI("12345678A"));
     }
 }

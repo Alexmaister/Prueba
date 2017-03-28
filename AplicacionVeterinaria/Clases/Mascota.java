@@ -39,7 +39,7 @@ public class Mascota implements Cloneable{
 
     }
 
-    public Mascota(String nombre, char sexo, Fecha fecha, String raza, String especie,Persona p){
+    public Mascota(String nombre, char sexo, Fecha fecha, String raza, String especie){
         this.nombre=nombre;
         this.sexo=sexo;
         this.fechaNacimiento=fecha;
