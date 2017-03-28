@@ -11,7 +11,7 @@ import java.lang.*;
  */
 public class GestionClientes {
 
-    List listaClientes=new ArrayList<Persona>();
+    private List listaClientes=new ArrayList<Persona>();
 
    /*
    cabecera: public Persona crearPersona()
@@ -69,7 +69,7 @@ public class GestionClientes {
        return p;
    }
 
-   /*cabecera: piblic void datosAdicionales(Persona p)
+   /*cabecera: public void datosAdicionales(Persona p)
    descripcion: procedimiento que establecera a una persona introducida por parametros los datos adicionales como telf, etc
    que seran recogidos de teclado
    entradas/salidas: un objeto tipo Persona
