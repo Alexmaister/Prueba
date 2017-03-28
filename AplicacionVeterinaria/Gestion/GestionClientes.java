@@ -127,7 +127,10 @@ public class GestionClientes {
 
         listaClientes.remove(pos);
     }
-    public void borrarXDNI(String DNI){}
+    public void borrarXDNI(String DNI){
+
+        borrar(buscarClienteXDNI(DNI));
+    }
 
 
     /*cabecera: public int buscarClienteXDNI(String DNI)
