@@ -7,7 +7,6 @@
     <list default="true" id="2c4d58ff-879d-4fa7-ac84-c5910399e9e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionClientes.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionClientes.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionMapaClienteMascota.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionMapaClienteMascota.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -810,7 +809,7 @@
       <workItem from="1490691354137" duration="16000" />
       <workItem from="1490691404138" duration="7852000" />
       <workItem from="1490772260812" duration="8284000" />
-      <workItem from="1490818986163" duration="1686000" />
+      <workItem from="1490818986163" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="x">
       <created>1490010672199</created>
@@ -903,11 +902,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490702291593</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="nuevos metodos gestion mapa">
+      <created>1490820836660</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1490820836660</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46235000" />
+    <option name="totallyTimeSpent" value="46258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -970,7 +976,8 @@
     <MESSAGE value="Continuamos cn Gestion" />
     <MESSAGE value="Terminado todo x dni" />
     <MESSAGE value="NUeva Clase de Gestion" />
-    <option name="LAST_COMMIT_MESSAGE" value="NUeva Clase de Gestion" />
+    <MESSAGE value="nuevos metodos gestion mapa" />
+    <option name="LAST_COMMIT_MESSAGE" value="nuevos metodos gestion mapa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
