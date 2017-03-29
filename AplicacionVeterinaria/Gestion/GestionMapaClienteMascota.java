@@ -1,5 +1,6 @@
 package Gestion;
 import Clases.*;
+import Comparadores.PersonaComparadorApellidosNombre;
 
 import java.io.BufferedReader;
 import java.util.*;
@@ -11,7 +12,7 @@ import java.io.*;
 public class GestionMapaClienteMascota
 {
 
-    private Map MapaClienteMascota=new LinkedHashMap<Persona,ArrayList<Mascota>>();
+    private Map mapaClienteMascota=new LinkedHashMap<Persona,ArrayList<Mascota>>();
     private GestionClientes clientes=new GestionClientes();
     private GestionMascotas mascotas=new GestionMascotas();
     Persona p;
@@ -32,7 +33,7 @@ public class GestionMapaClienteMascota
             System.out.println("Ahora introduciremos las mascotas del cliente -->");
             mascotas.rellenarListaMascotas();
             t = new ArrayList<Mascota>(mascotas.getListaMascotas());
-            MapaClienteMascota.put(p, t);
+            mapaClienteMascota.put(p, t);
             do{
             try{
                 System.out.println("¿Desea introducir un nuevo CLiente?");
@@ -43,5 +44,28 @@ public class GestionMapaClienteMascota
         try{teclado.close();}catch(IOException e){e.printStackTrace();}
     }
 
+    /*cabecera: public List<Entry<Persona,ArrayList<Mascota>>> pasarMapaALista()
+    descripcion: pasará los datos contenidos en la variable local mapa a una Lista
+    salidas:una lista
+    postcondiciones:la lista contendra todos las claves y valores del mapa
+    * */
+    public List<Map.Entry<Persona,ArrayList<Mascota>>> pasarMapaALista(){
 
+        List lista=new ArrayList<Map.Entry<Persona,ArrayList<Mascota>>>(mapaClienteMascota.entrySet());
+
+
+       return lista;
+    }
+
+    /*cabecera: public void ordenarMapaXDNICliente()
+    descripcion:procedimiento que modificará el orden de la variable local de tipo map
+    * */
+    public void ordenarXNombreCliente(){
+
+        List lista=pasarMapaALista();
+        lista.sort(new PersonaComparadorApellidosNombre());
+        for(Map.Entry<Persona,ArrayList<Mascota>> claveValor:(List<Map.Entry<Persona,ArrayList<Mascota>>>)lista)
+            mapaClienteMascota.put(claveValor.getKey(),claveValor.getValue());
+
+    }
 }
