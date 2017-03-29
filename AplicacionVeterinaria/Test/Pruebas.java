@@ -1,6 +1,7 @@
 package Test;
 import Clases.*;
 import Gestion.GestionClientes;
+import Gestion.GestionMapaClienteMascota;
 
 import java.util.*;
 import java.lang.*;
@@ -23,8 +24,8 @@ public class Pruebas {
         m1.setEspecie("marina");
         mapa.put(p1,m1);
         m1.setEspecie("terrestre");
-
-
+        GestionMapaClienteMascota mapa1=new GestionMapaClienteMascota();
+        mapa1.crearMapa();
         System.out.println("Mapa como Map");
         System.out.println(mapa.toString());
         List<Map.Entry<Persona,Mascota>> mapaList=new LinkedList<Map.Entry<Persona, Mascota>>(mapa.entrySet());

@@ -13,6 +13,9 @@ public class GestionClientes {
 
     private List listaClientes=new ArrayList<Persona>();
 
+    public List getListaClientes(){
+        return this.listaClientes;
+    }
    /*
    cabecera: public Persona crearPersona()
    descripcion:funcion que devolvera una persona con los atributos que se recojan por teclado
@@ -28,32 +31,34 @@ public class GestionClientes {
        //variables internas para comprobar dni , recidir los datos adicionales si estos se desean incluir..
        String DNI=new String();
        char datos=' ';
+       int dia,mes,año;
        try {
            System.out.println("Introduzca el Nombre del Cliente :");
            p.setNombre(teclado.readLine());
            System.out.println("Introduzca los apellidos :");
            p.setApellidos(teclado.readLine());
            System.out.println("Introduzca la fecha de nacimiento :");
-           try {
-               System.out.println("Dia:");
-               f.setDia(Integer.parseInt(teclado.readLine()));
-               System.out.println("Mes:");
-               f.setMes(Integer.parseInt(teclado.readLine()));
-               System.out.println("Año:");
-               f.setAño(Integer.parseInt(teclado.readLine()));
-           }catch(ExcepcionFecha e){
-               e.printStackTrace();
-           }
-           System.out.println("Introduzca el DNI");
-           do {
-               try {
-                   DNI=teclado.readLine();
-                   p.setDNI(DNI);
-               }catch(ExcepcionPersona e){
-                   e.printStackTrace();
-               }
-           }while(DNI.matches("[0-9]{8}[A-Z]"));
 
+               System.out.println("Dia:");
+               dia=Integer.parseInt(teclado.readLine());
+               System.out.println("Mes:");
+               mes=Integer.parseInt(teclado.readLine());
+               System.out.println("Año:");
+               año=Integer.parseInt(teclado.readLine());
+                p.setFechaNac(new Fecha(dia,mes,año));
+
+
+           do {
+               System.out.println("Introduzca el DNI");
+               DNI=teclado.readLine();
+               try{p.setDNI(DNI);}catch(ExcepcionPersona e){System.out.println("El dni no es correcto");}
+
+           }while(!DNI.matches("[0-9]{8}[A-Z]"));
+
+           do{
+           System.out.println("¿Desea introducir datos adicionales?(S/N)");
+           datos=Character.toUpperCase(teclado.readLine().charAt(0));
+           }while(datos!='S' && datos!='N');
            if(datos=='S') {
              datosAdicionales(p);
            }
@@ -61,11 +66,7 @@ public class GestionClientes {
 
            e.printStackTrace();
        }
-       try {
-           teclado.close();
-       } catch (IOException e) {
-           e.printStackTrace();
-       }
+
        return p;
    }
 
@@ -79,7 +80,7 @@ public class GestionClientes {
    public void datosAdicionales(Persona p){
        ArrayList<String> list = new ArrayList<String>();
        BufferedReader teclado=new BufferedReader(new InputStreamReader(System.in));
-
+        String codPostal=" ";
        try{
            System.out.println("Introduzca el telefono");
            p.setTelefono(teclado.readLine());
@@ -87,20 +88,21 @@ public class GestionClientes {
            p.setTelefonoM(teclado.readLine());
            System.out.println("Introduzca la direccion");
            p.setDireccion(teclado.readLine());
-           try {
-               System.out.println("Introduzca el codigo postal");
-               p.setCodPostal(teclado.readLine());
-           }catch(ExcepcionPersona ep){ep.printStackTrace();}
+           do {
+               try {
+                   System.out.println("Introduzca el codigo postal");
+                   codPostal=(teclado.readLine());
+                   p.setCodPostal(codPostal);
+               } catch (ExcepcionPersona ep) {
+                   System.out.println("El formato no es el adecuado");
+               }
+           }while(!codPostal.matches("[0-9]{5}"));
            System.out.println("Introduzca la nacionalidad");
            p.setNacionalidad(teclado.readLine());
        }catch(IOException e){
            e.printStackTrace();
        }
-       try {
-           teclado.close();
-       } catch (IOException e) {
-           e.printStackTrace();
-       }
+
    }
 
     /*
@@ -113,11 +115,16 @@ public class GestionClientes {
         char nuevoCliente=' ';
        do {
            listaClientes.add(crearPersona());
-           System.out.println("¿Desea introducir otro cliente?");
-           try {
-               nuevoCliente = Character.toUpperCase(teclado.readLine().charAt(0));
-           }catch (IOException e){e.printStackTrace();}
-       }while ((nuevoCliente!='S' && nuevoCliente !='N')||(nuevoCliente=='N'));
+           do {
+               System.out.println("¿Desea introducir otro cliente?(S/N)");
+               try {
+                   nuevoCliente = Character.toUpperCase(teclado.readLine().charAt(0));
+               } catch (IOException e) {
+                  System.out.println(e);
+               }
+           }while(nuevoCliente!='S' && nuevoCliente!='N');
+       }while (nuevoCliente=='S');
+
    }
 
 

@@ -112,10 +112,10 @@ public class Persona implements Cloneable,Comparable<Persona>{
         this.apellidos=a;
     }
     public void setFechaNac(Fecha f){
-        this.fechaNac=f;
+        this.fechaNac=new Fecha(f);
     }
     public void setDNI(String dni)throws ExcepcionPersona{
-       if(dni.matches("[0-9]{8}[A-Z]]"))
+       if(dni.matches("[0-9]{8}+[A-Z]"))
         this.DNI=dni;
        else throw new ExcepcionPersona("El dni no cumple el formato");
     }
@@ -129,7 +129,7 @@ public class Persona implements Cloneable,Comparable<Persona>{
         this.direccion=d;
     }
     public void setCodPostal(String cp)throws ExcepcionPersona{
-        if(cp.matches("[0-9]{5}]"))
+        if(cp.matches("[0-9]{5}"))
         this.codPostal=cp;
         else throw new ExcepcionPersona(("El codigo postal no cumple el formato"));
 

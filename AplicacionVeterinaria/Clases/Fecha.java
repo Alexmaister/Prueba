@@ -84,21 +84,6 @@ public class Fecha implements Cloneable,Comparable<Fecha>{
         return this.año;
     }
 
-    public void setDia(int d)throws ExcepcionFecha{
-        if(!validarFecha(d,this.mes,this.año))
-        this.dia=d;
-        else throw new ExcepcionFecha("El dia no es correcto");
-    }
-    public void setMes(int m)throws ExcepcionFecha{
-        if(!validarFecha(this.dia,m,this.año))
-        this.mes=m;
-         else throw new ExcepcionFecha("El mes no es correcto");
-    }
-    public void setAño(int a)throws ExcepcionFecha{
-        if(!validarFecha(this.dia,this.mes,a))
-        this.año=a;
-         else throw new ExcepcionFecha("El año no es correcto");
-    }
 
     public int compareTo(Fecha f){
         int resultado=0;
