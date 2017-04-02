@@ -19,6 +19,9 @@ public class GestionMapaClienteMascota
     List<Mascota> t;
 
 
+    public Map<Persona,ArrayList<Mascota>> getMapa(){
+        return this.mapaClienteMascota;
+    }
     /*
     * */
     public void crearMapa(){
@@ -44,28 +47,28 @@ public class GestionMapaClienteMascota
         try{teclado.close();}catch(IOException e){e.printStackTrace();}
     }
 
+    //deprecated
     /*cabecera: public List<Entry<Persona,ArrayList<Mascota>>> pasarMapaALista()
     descripcion: pasará los datos contenidos en la variable local mapa a una Lista
     salidas:una lista
     postcondiciones:la lista contendra todos las claves y valores del mapa
     * */
-    public List<Map.Entry<Persona,ArrayList<Mascota>>> pasarMapaALista(){
+   /* public List<Map.Entry<Persona,ArrayList<Mascota>>> pasarMapaALista(){
 
-        List lista=new ArrayList<Map.Entry<Persona,ArrayList<Mascota>>>(mapaClienteMascota.entrySet());
+        List<Map.Entry<Persona,ArrayList<Mascota>>> lista= (List<Map.Entry<Persona,ArrayList<Mascota>>>) mapaClienteMascota.entrySet();
 
 
        return lista;
-    }
+    }*/
 
     /*cabecera: public void ordenarMapaXDNICliente()
     descripcion:procedimiento que modificará el orden de la variable local de tipo map
     * */
     public void ordenarXNombreCliente(){
 
-        List lista=pasarMapaALista();
-        lista.sort(new PersonaComparadorApellidosNombre());
-        for(Map.Entry<Persona,ArrayList<Mascota>> claveValor:(List<Map.Entry<Persona,ArrayList<Mascota>>>)lista)
-            mapaClienteMascota.put(claveValor.getKey(),claveValor.getValue());
-
+      Map<Persona,ArrayList<Mascota>> mapaSec= new TreeMap( new PersonaComparadorApellidosNombre());
+        Set<Persona> persona=mapaSec.keySet();
+        mapaSec.putAll(mapaClienteMascota);
+        mapaClienteMascota=mapaSec;
     }
 }
