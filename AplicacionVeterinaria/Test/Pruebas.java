@@ -16,6 +16,7 @@ public class Pruebas {
         GestionMapaClienteMascota mapa1=new GestionMapaClienteMascota();
         mapa1.crearMapa();
         mapa1.ordenarXNombreCliente();
-        System.out.println(mapa1.getMapa().toString());
+        mapa1.mostrarMapa();
+        mapa1.mostrarMascotasPersona(1);
     }
 }

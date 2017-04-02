@@ -53,13 +53,14 @@ public class GestionMapaClienteMascota
     salidas:una lista
     postcondiciones:la lista contendra todos las claves y valores del mapa
     * */
-   /* public List<Map.Entry<Persona,ArrayList<Mascota>>> pasarMapaALista(){
+    @Deprecated
+    public List<Map.Entry<Persona,ArrayList<Mascota>>> pasarMapaALista(){
 
         List<Map.Entry<Persona,ArrayList<Mascota>>> lista= (List<Map.Entry<Persona,ArrayList<Mascota>>>) mapaClienteMascota.entrySet();
 
 
        return lista;
-    }*/
+    }
 
     /*cabecera: public void ordenarMapaXDNICliente()
     descripcion:procedimiento que modificará el orden de la variable local de tipo map
@@ -71,4 +72,47 @@ public class GestionMapaClienteMascota
         mapaSec.putAll(mapaClienteMascota);
         mapaClienteMascota=mapaSec;
     }
+
+    /**cabecera: public void mostrarMapa()
+     * descripcion: procedimiento que mostrara por pantalla el mapa de personas con sus respectivas mascotas
+     */
+    public void mostrarMapa(){
+        Iterator entries = mapaClienteMascota.entrySet().iterator();
+        int i=1;
+
+        System.out.println("CLIENTE----------------------------MASCOTAS");
+        while (entries.hasNext()) {
+            Map.Entry entry = (Map.Entry) entries.next();
+           Persona key = (Persona)entry.getKey();
+            ArrayList<Mascota> value = (ArrayList<Mascota>)entry.getValue();
+            System.out.println(+i+"--Nombre   :  "+key.getNombre());
+            System.out.print("---Apellidos:  "+key.getApellidos());
+            System.out.println("             "+value.size());
+            System.out.println("---DNI      :  "+key.getDNI());
+
+            System.out.println("-------------------------------------------");
+            i++;
+        }
+    }
+
+    /*cabecera public void mostrarMascotaPersona>(int pos)
+    descripcion:procedimiento que mostrara una lista con todas las personas del mapa
+    * */
+    public void mostrarMascotasPersona(int pos){
+        Iterator<Map.Entry<Persona,ArrayList<Mascota>>> iterador =mapaClienteMascota.entrySet().iterator();
+        int i=1;
+        Mascota mas;
+        while(iterador.hasNext()){
+            System.out.println("MASCOTA  : "+(i));
+            mas=iterador.next().getValue().get(i-1);
+            System.out.println((i)+"-Nombre   :  "+mas.getNombre());
+            System.out.println("--Especie  :  "+mas.getEspecie());
+            System.out.println("--Raza     :  "+mas.getRaza());
+            System.out.println("--FechaNac :  "+mas.getFechaNacimiento().toString());
+            System.out.println("--Sexo     :  "+mas.getSexo());
+            System.out.println("-------------------------------------------");
+            i++;
+        }
+    }
+
 }
