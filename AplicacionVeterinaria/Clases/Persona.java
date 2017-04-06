@@ -50,7 +50,7 @@ public class Persona implements Cloneable,Comparable<Persona>{
         this.telefono=" ";
         this.telefonoMovil=" ";
         this.direccion="Desconocida";
-        this.codPostal="Desconocido";
+        this.codPostal="11111";
         this.nacionalidad="Desconocida";
     }
     public Persona(String n, String a, String dni, Fecha f, String tlf, String tlfm, String d, String cp, String nacionalidad){
