@@ -1,6 +1,8 @@
 package Clases;
+import Excepciones.ExcepcionFecha;
 import Excepciones.ExcepcionMascota;
-
+import java.util.*;
+import java.lang.*;
 
 /**
  * Created by aortiz on 17/01/2017.
@@ -47,7 +49,23 @@ public class Mascota implements Cloneable{
         this.especie=especie;
 
     }
-
+    //constructor por cadena
+    public Mascota(String mascota)throws ExcepcionMascota{
+        this();
+        List atributos=Arrays.asList(mascota.split(","));
+        if(atributos.size()!=5)throw new ExcepcionMascota("¡¡Error!!:Los atributos no corresponden al numero deseado");
+        else {
+            this.setNombre((String)atributos.get(0));
+            try {
+                this.setFechaNacimiento(new Fecha((String) atributos.get(1)));
+            } catch (ExcepcionFecha excepcionFecha) {
+                System.out.println(excepcionFecha);
+            }
+            this.setSexo(((String)atributos.get(2)).charAt(0));
+            this.setRaza((String)atributos.get(3));
+            this.setEspecie((String)atributos.get(4));
+        }
+    }
     public Mascota(Mascota mascota){
 
         this.nombre=mascota.getNombre();

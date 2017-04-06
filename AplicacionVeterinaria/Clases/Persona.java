@@ -1,5 +1,6 @@
 package Clases;
 
+import Excepciones.ExcepcionFecha;
 import Excepciones.ExcepcionPersona;
 
 import java.util.*;
@@ -76,6 +77,34 @@ public class Persona implements Cloneable,Comparable<Persona>{
         this.nacionalidad = p.getNacionalidad();
    }
 
+
+    public Persona(String persona)throws ExcepcionPersona{
+       this();
+       List atributos=Arrays.asList(persona.split(","));
+
+       if(atributos.size()!=9){
+           throw new ExcepcionPersona("¡¡Error!!:El numero de atributos no es el correcto");
+       }else{
+           this.setNombre((String)atributos.get(0));
+           this.setApellidos((String)atributos.get(1));
+           try {
+               this.setFechaNac(new Fecha((String)atributos.get(2)));
+           } catch (ExcepcionFecha excepcionFecha) {
+               System.out.println(excepcionFecha);
+           }
+           if(((String)atributos.get(3)).matches("[0-9]{8}[A-Z]")){
+               this.setDNI((String)atributos.get(3));
+           }else throw new ExcepcionPersona("El formato del DNI es incorrecto");
+           this.setTelefono((String)atributos.get(4));
+           this.setTelefonoM((String)atributos.get(5));
+           this.setDireccion((String)atributos.get(6));
+           if(((String)atributos.get(7)).matches("[0-9]{5}"))
+           this.setCodPostal((String)atributos.get(7));
+           else throw new ExcepcionPersona("¡Error!: El codigo postal no cumple el formato");
+           this.setNacionalidad((String)atributos.get(8));
+       }
+
+    }
     public String getNombre(){
         return this.nombre;
     }

@@ -1,7 +1,9 @@
 package Clases;
 import Excepciones.ExcepcionFecha;
+import Excepciones.ExcepcionPersona;
+
 import java.lang.*;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * Created by Ale on 10/02/2017.
@@ -62,6 +64,25 @@ public class Fecha implements Cloneable,Comparable<Fecha>{
         this.año=f.getAño();
     }
 
+    //constructor por Cadena
+    public Fecha(String fecha)throws ExcepcionFecha{
+        this();
+        List atributos=Arrays.asList(fecha.split(","));
+        int d,m,a;
+        if(atributos.size()!=3){
+            throw new ExcepcionFecha("¡¡Error!!:El numero de atributos es diferente de 3");
+        }else{
+            d=Integer.parseInt((String) atributos.get(0));
+            m=Integer.parseInt((String) atributos.get(1));
+            a=Integer.parseInt((String) atributos.get(2));
+            if(validarFecha(d,m,a)){
+                this.dia=d;
+                this.mes=m;
+                this.año=a;
+            }else throw new ExcepcionFecha("La fecha no es valida");
+        }
+
+    }
 
     //metodos modificadores
     public void modificarFecha(int d,int m,int a)throws ExcepcionFecha {
