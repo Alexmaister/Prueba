@@ -17,18 +17,16 @@ public class GestionFichero {
     public void setFichero(String path){
         this.fichero=new File(path);
     }
-    public static void main(String... a){
+    public void GuardarPersona(Persona p){
 
-        GestionFichero gf=new GestionFichero();
-        gf.setFichero("FicheroPrueba.txt");
         try {
-            PrintWriter pw=new PrintWriter(gf.getFichero());
+            PrintWriter pw=new PrintWriter(getFichero());
 
             pw.println(new Persona());
 
             pw.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+           System.out.println(e);
         }
 
 
