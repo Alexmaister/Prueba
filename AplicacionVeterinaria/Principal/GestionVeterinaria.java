@@ -9,6 +9,6 @@ public class GestionVeterinaria {
     descripcion: procedimiento que mostrara en pantalla una serie de opciones
     * */
     public static void mostrarMenuPrincipal(){
-        Syste
+
     }
 }
