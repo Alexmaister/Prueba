@@ -1,6 +1,7 @@
 package Gestion;
 
 import Clases.Persona;
+import Excepciones.ExcepcionPersona;
 
 import java.io.*;
 
@@ -9,11 +10,11 @@ import java.io.*;
  */
 public class GestionFicheroBinario {
 
-    private File fichero;
+    private File fichero=null;
     private FileInputStream flujoEntrada;
-    private ObjectInputStream lector;
-    private FileOutputStream flujoSalida;
-    private ObjectOutputStream escritor;
+    private ObjectInputStream lector=null;
+    private FileOutputStream flujoSalida=null;
+    private ObjectOutputStream escritor=null;
 
     GestionFicheroBinario(){
         fichero=new File("ArchivoPorDefectoBin.dat");
@@ -29,10 +30,10 @@ public class GestionFicheroBinario {
         try {
             flujoSalida = new FileOutputStream(fichero, true);
             try {
-                escritor=new ObjectOutputStream(flujoSalida);
+                escritor=new ObjectOutputStream(flujoSalida){
+                @Override protected void writeStreamHeader(){}};
 
                 escritor.writeObject(p);
-                escritor.writeChars("\n");
                 escritor.close();
 
             } catch (IOException e) {
@@ -43,30 +44,29 @@ public class GestionFicheroBinario {
         }catch(FileNotFoundException e){System.out.println(e);}
     }
     public void leerPersonas() {
-        Persona p=null;
+        Persona p = null;
+
         try {
-            flujoEntrada = new FileInputStream(fichero);
+            flujoEntrada = new FileInputStream(fichero.getName());
+
+            lector = new ObjectInputStream(flujoEntrada){@Override protected void readStreamHeader(){}};
+
             try {
-                lector = new ObjectInputStream(flujoEntrada);
-                System.out.println(lector.readUnshared());
-                for(int i=0;i<fichero.length();i++){
+                while ((p = new Persona((Persona) lector.readObject())) != null) {
+                    System.out.println(p.toString());
 
-                    System.out.println(lector.readUnshared());
                 }
-
-
-
-
-            }catch(IOException e){} catch (ClassNotFoundException e) {
-                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
             }
 
-        }catch(FileNotFoundException e){}
+            lector.close();
+
+        } catch (IOException e) {
+
+        }
     }
     public static void main(String... a){
         GestionFicheroBinario gfb=new GestionFicheroBinario();
-        gfb.escribirPersona(new Persona());
-        gfb.escribirPersona(new Persona());
         gfb.escribirPersona(new Persona());
         gfb.leerPersonas();
     }

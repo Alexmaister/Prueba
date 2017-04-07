@@ -34,7 +34,7 @@ retrasarDias(int n)
 * */
 public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
 
-   // private static final long SerialVersionUID= 2L;
+   private static final long serialVersionUID= 2L;
 
     private int dia,mes,año;
 
