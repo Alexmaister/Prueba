@@ -67,7 +67,7 @@ public class Fecha implements Cloneable,Comparable<Fecha>{
     //constructor por Cadena
     public Fecha(String fecha)throws ExcepcionFecha{
         this();
-        List atributos=Arrays.asList(fecha.split(","));
+        List atributos=Arrays.asList(fecha.split("/"));
         int d,m,a;
         if(atributos.size()!=3){
             throw new ExcepcionFecha("¡¡Error!!:El numero de atributos es diferente de 3");

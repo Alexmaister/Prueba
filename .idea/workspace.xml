@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4d58ff-879d-4fa7-ac84-c5910399e9e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ArchivoPorDefecto.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FicheroPrueba.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Persona.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Persona.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFichero.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFichero.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Fecha.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Fecha.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArchivoPorDefecto.txt" afterPath="$PROJECT_DIR$/ArchivoPorDefecto.txt" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +22,12 @@
     <favorites_list name="Veterinaria" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="833">
+              <caret line="94" column="67" lean-forward="true" selection-start-line="94" selection-start-column="67" selection-end-line="94" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,29 +38,72 @@
       <file leaf-file-name="Mascota.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="1020">
               <caret line="63" column="54" lean-forward="false" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="false" />
+                <element signature="e#2025#2026#0" expanded="false" />
+                <element signature="e#2052#2053#0" expanded="false" />
+                <element signature="e#2084#2085#0" expanded="false" />
+                <element signature="e#2236#2237#0" expanded="false" />
+                <element signature="e#2279#2280#0" expanded="false" />
+                <element signature="e#2308#2309#0" expanded="false" />
+                <element signature="e#2340#2341#0" expanded="false" />
+                <element signature="e#2372#2373#0" expanded="false" />
+                <element signature="e#2407#2408#0" expanded="false" />
+                <element signature="e#2450#2451#0" expanded="false" />
+                <element signature="e#2484#2485#0" expanded="false" />
+                <element signature="e#2529#2530#0" expanded="false" />
+                <element signature="e#2567#2568#0" expanded="false" />
+                <element signature="e#2605#2606#0" expanded="false" />
+                <element signature="e#2635#2636#0" expanded="false" />
+                <element signature="e#2679#2680#0" expanded="false" />
+                <element signature="e#2715#2716#0" expanded="false" />
+                <element signature="e#3664#3665#0" expanded="false" />
+                <element signature="e#3743#3744#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestionFichero.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GestionFichero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="-83">
               <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
                 <element signature="e#1391#1400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestionFicheroBinario.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fecha.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="69" column="51" lean-forward="false" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,16 +111,30 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Principal/GestionVeterinaria.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java" />
       </list>
     </option>
   </component>
@@ -107,6 +165,50 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Comparadores" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,51 +291,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Comparadores" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Clases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -505,6 +567,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -633,6 +696,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -668,11 +737,26 @@
       <option name="project" value="LOCAL" />
       <updated>1491475422952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ok file">
+      <created>1491478853711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491478853711</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c4d58ff-879d-4fa7-ac84-c5910399e9e1" name="Default" comment="" />
+      <created>1491549309224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491549309224</updated>
+      <workItem from="1491549343790" duration="2465000" />
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4075000" />
+    <option name="totallyTimeSpent" value="6561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -680,26 +764,26 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32176656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23792094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -707,41 +791,17 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12079063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Esperemos q bien" />
-    <option name="LAST_COMMIT_MESSAGE" value="Esperemos q bien" />
+    <MESSAGE value="ok file" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,13 +821,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/Pruebas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1073,22 +1126,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="1020">
           <caret line="63" column="54" lean-forward="false" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="false" />
+            <element signature="e#2025#2026#0" expanded="false" />
+            <element signature="e#2052#2053#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2236#2237#0" expanded="false" />
+            <element signature="e#2279#2280#0" expanded="false" />
+            <element signature="e#2308#2309#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2372#2373#0" expanded="false" />
+            <element signature="e#2407#2408#0" expanded="false" />
+            <element signature="e#2450#2451#0" expanded="false" />
+            <element signature="e#2484#2485#0" expanded="false" />
+            <element signature="e#2529#2530#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+            <element signature="e#2605#2606#0" expanded="false" />
+            <element signature="e#2635#2636#0" expanded="false" />
+            <element signature="e#2679#2680#0" expanded="false" />
+            <element signature="e#2715#2716#0" expanded="false" />
+            <element signature="e#3664#3665#0" expanded="false" />
+            <element signature="e#3743#3744#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1097,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,14 +1166,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="1731" column="38" lean-forward="true" selection-start-line="1731" selection-start-column="38" selection-end-line="1731" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="113">
+          <caret line="69" column="51" lean-forward="false" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1121,17 +1181,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="-83">
           <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
             <element signature="e#1391#1400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="94" column="67" lean-forward="true" selection-start-line="94" selection-start-column="67" selection-end-line="94" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
           </folding>
         </state>
       </provider>

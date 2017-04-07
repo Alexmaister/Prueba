@@ -98,9 +98,9 @@ public class Persona implements Cloneable,Comparable<Persona>{
            this.setTelefono((String)atributos.get(4));
            this.setTelefonoM((String)atributos.get(5));
            this.setDireccion((String)atributos.get(6));
-           if(((String)atributos.get(7)).matches("[0-9]{5}"))
-           this.setCodPostal((String)atributos.get(7));
-           else throw new ExcepcionPersona("¡Error!: El codigo postal no cumple el formato");
+           if(((String)atributos.get(7)).matches("[0-9]{5}")) {
+               this.setCodPostal((String) atributos.get(7));
+           }else{ throw new ExcepcionPersona("¡Error!: El codigo postal no cumple el formato");}
            this.setNacionalidad((String)atributos.get(8));
        }
 
