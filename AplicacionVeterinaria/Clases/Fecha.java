@@ -2,6 +2,7 @@ package Clases;
 import Excepciones.ExcepcionFecha;
 import Excepciones.ExcepcionPersona;
 
+import java.io.Serializable;
 import java.lang.*;
 import java.util.*;
 
@@ -31,9 +32,9 @@ int diferenciaFechas(Fecha f)
 avanzarDias(int n)
 retrasarDias(int n)
 * */
-public class Fecha implements Cloneable,Comparable<Fecha>{
+public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
 
-    private static final String AM="AM", PM="PM";
+   // private static final long SerialVersionUID= 2L;
 
     private int dia,mes,año;
 

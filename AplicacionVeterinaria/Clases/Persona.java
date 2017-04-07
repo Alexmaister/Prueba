@@ -3,6 +3,7 @@ package Clases;
 import Excepciones.ExcepcionFecha;
 import Excepciones.ExcepcionPersona;
 
+import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -30,8 +31,9 @@ import java.util.*;
 
 
 * */
-public class Persona implements Cloneable,Comparable<Persona>{
+public class Persona implements Cloneable,Comparable<Persona>,Serializable {
 
+    //private static final long SerialVersionUID=1L;
     private String nombre;
     private String apellidos;
     private Fecha fechaNac;
