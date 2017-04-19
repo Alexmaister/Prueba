@@ -69,6 +69,14 @@ public class GestionFicheroBinario {
         GestionFicheroBinario gfb=new GestionFicheroBinario();
         gfb.escribirPersona(new Persona());
         gfb.leerPersonas();
+        System.out.println(gfb.getFile().length());
+        System.out.println(gfb.getFile().getFreeSpace());
+        System.out.println(gfb.getFile().getName());
+        System.out.println(gfb.getFile().getParent());
+        gfb.setFile("NuevoPruebas.txt");
+        gfb.getFile().renameTo(new File("Espagueti con tomate.txt"));
+        System.out.println(gfb.getFile().getName());
+        System.out.println(gfb.getFile().getParent());
     }
 
 }

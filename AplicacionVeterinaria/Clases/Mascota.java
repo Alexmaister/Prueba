@@ -1,6 +1,8 @@
 package Clases;
 import Excepciones.ExcepcionFecha;
 import Excepciones.ExcepcionMascota;
+
+import java.io.Serializable;
 import java.util.*;
 import java.lang.*;
 
@@ -21,9 +23,9 @@ setRaza(String raza)
 
 
  */
-public class Mascota implements Cloneable{
+public class Mascota implements Cloneable,Serializable{
 
-
+    private static final long serialVersionUID=1L;
     private String nombre;
     private char sexo;
     private Fecha fechaNacimiento;
