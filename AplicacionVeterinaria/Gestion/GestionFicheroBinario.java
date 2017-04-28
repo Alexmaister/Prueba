@@ -35,7 +35,7 @@ public class GestionFicheroBinario {
 
                 escritor.writeObject(p);
                 escritor.close();
-
+               //flujoSalida.close();
             } catch (IOException e) {
                System.out.println(e);
             }
@@ -60,7 +60,7 @@ public class GestionFicheroBinario {
             }
 
             lector.close();
-
+            flujoEntrada.close();
         } catch (IOException e) {
 
         }
@@ -74,7 +74,11 @@ public class GestionFicheroBinario {
         System.out.println(gfb.getFile().getName());
         System.out.println(gfb.getFile().getParent());
         gfb.setFile("NuevoPruebas.txt");
-        gfb.getFile().renameTo(new File("Espagueti con tomate.txt"));
+        gfb.escribirPersona(new Persona());
+        File f=new File("NuevoPruebas.txt");
+        System.out.println(gfb.getFile().getName());
+        f.renameTo(new File("Espagueti con tomate.txt"));
+        gfb.setFile("Espagueti con tomate.txt");
         System.out.println(gfb.getFile().getName());
         System.out.println(gfb.getFile().getParent());
     }
