@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4d58ff-879d-4fa7-ac84-c5910399e9e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Fecha.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Fecha.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Persona.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Clases/Persona.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionClientes.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionClientes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFichero.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFichero.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFicheroBinario.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFicheroBinario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionMapaClienteMascota.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionMapaClienteMascota.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionMascotas.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionMascotas.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArchivoPorDefectoBin.dat" afterPath="$PROJECT_DIR$/ArchivoPorDefectoBin.dat" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +22,8 @@
       <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="544">
+              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -42,29 +32,10 @@
       <file leaf-file-name="Mascota.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
+            <state relative-caret-position="1292">
               <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding>
-                <marker date="1491565588803" expanded="true" signature="1734:1960" ph="{...}" />
-                <marker date="1491565588803" expanded="false" signature="1991:2001" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2020:2026" ph=" }" />
-                <marker date="1491565588803" expanded="true" signature="2052:2062" ph=" { " />
-                <marker date="1491565588803" expanded="true" signature="2079:2085" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2236:2246" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2274:2280" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2308:2318" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2335:2341" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2402:2408" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2450:2460" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2479:2485" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2529:2539" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2562:2568" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2605:2615" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2630:2636" ph=" }" />
-                <marker date="1491565588803" expanded="false" signature="2679:2689" ph=" { " />
-                <marker date="1491565588803" expanded="false" signature="2710:2716" ph=" }" />
-                <marker date="1491565588803" expanded="true" signature="2771:2921" ph="{...}" />
-                <marker date="1491565588803" expanded="true" signature="2962:3196" ph="{...}" />
+                <element signature="e#2084#2085#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,32 +44,30 @@
       <file leaf-file-name="GestionFichero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="1037">
               <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestionFicheroBinario.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GestionFicheroBinario.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="51" column="102" lean-forward="false" selection-start-line="51" selection-start-column="102" selection-end-line="51" selection-end-column="102" />
+            <state relative-caret-position="525">
+              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fecha.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Fecha.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="289">
+              <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -129,8 +98,8 @@
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" />
         <option value="$PROJECT_DIR$/ArchivoPorDefectoBin.dat" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
       </list>
     </option>
   </component>
@@ -143,8 +112,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -203,7 +172,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -287,6 +255,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -770,6 +739,8 @@
       <updated>1491549309224</updated>
       <workItem from="1491549343790" duration="6795000" />
       <workItem from="1491565630558" duration="9889000" />
+      <workItem from="1492503664152" duration="1181000" />
+      <workItem from="1493364584266" duration="187000" />
     </task>
     <task id="LOCAL-00003" summary="ok fileBIn">
       <created>1491551851798</created>
@@ -782,29 +753,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20780000" />
+    <option name="totallyTimeSpent" value="22148000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32117528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32117528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.334375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3338214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -815,7 +784,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -866,7 +837,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java</url>
-          <line>178</line>
+          <line>179</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1160,29 +1131,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
+        <state relative-caret-position="1292">
           <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
           <folding>
-            <marker date="1491565588803" expanded="true" signature="1734:1960" ph="{...}" />
-            <marker date="1491565588803" expanded="false" signature="1991:2001" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2020:2026" ph=" }" />
-            <marker date="1491565588803" expanded="true" signature="2052:2062" ph=" { " />
-            <marker date="1491565588803" expanded="true" signature="2079:2085" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2236:2246" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2274:2280" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2308:2318" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2335:2341" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2402:2408" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2450:2460" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2479:2485" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2529:2539" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2562:2568" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2605:2615" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2630:2636" ph=" }" />
-            <marker date="1491565588803" expanded="false" signature="2679:2689" ph=" { " />
-            <marker date="1491565588803" expanded="false" signature="2710:2716" ph=" }" />
-            <marker date="1491565588803" expanded="true" signature="2771:2921" ph="{...}" />
-            <marker date="1491565588803" expanded="true" signature="2962:3196" ph="{...}" />
+            <element signature="e#2084#2085#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1197,23 +1149,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state relative-caret-position="544">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="1037">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
@@ -1223,19 +1167,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="69" lean-forward="false" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFicheroBinario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="51" column="102" lean-forward="false" selection-start-line="51" selection-start-column="102" selection-end-line="51" selection-end-column="102" />
+        <state relative-caret-position="525">
+          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

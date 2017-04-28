@@ -17,20 +17,11 @@ setMes(int m)
 int getAño()
 setAño(int a)
 int getHora();
-setHora(int h)
-int getMinutos()
-setMinutos(int min)
-int getSegundos()
-setSegundos(int s)
-boolean getFormatoAM()
 
-cambiarConstante(String c)
-void cambiarFormato()
-boolean comprobarFecha(int a, int m, int d)
-boolean comprobarHora(int h, int m, int s)
-int diferenciaFechas(Fecha f)
-avanzarDias(int n)
-retrasarDias(int n)
+boolean validarFecha(int a, int m, int d)
+boolean validarFecha(Fecha f)
+void modificarFecha(int d,int m,int a)
+
 * */
 public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
 
