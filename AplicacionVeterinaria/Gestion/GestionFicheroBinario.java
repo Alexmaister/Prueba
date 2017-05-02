@@ -2,13 +2,14 @@ package Gestion;
 
 import Clases.Persona;
 import Excepciones.ExcepcionPersona;
+import ClasesAbstractas.*;
 
 import java.io.*;
 
 /**
  * Created by aortiz on 07/04/2017.
  */
-public class GestionFicheroBinario {
+public class GestionFicheroBinario extends{
 
     private File fichero=null;
     private FileInputStream flujoEntrada;
@@ -65,22 +66,6 @@ public class GestionFicheroBinario {
 
         }
     }
-    public static void main(String... a){
-        GestionFicheroBinario gfb=new GestionFicheroBinario();
-        gfb.escribirPersona(new Persona());
-        gfb.leerPersonas();
-        System.out.println(gfb.getFile().length());
-        System.out.println(gfb.getFile().getFreeSpace());
-        System.out.println(gfb.getFile().getName());
-        System.out.println(gfb.getFile().getParent());
-        gfb.setFile("NuevoPruebas.txt");
-        gfb.escribirPersona(new Persona());
-        File f=new File("NuevoPruebas.txt");
-        System.out.println(gfb.getFile().getName());
-        f.renameTo(new File("Espagueti con tomate.txt"));
-        gfb.setFile("Espagueti con tomate.txt");
-        System.out.println(gfb.getFile().getName());
-        System.out.println(gfb.getFile().getParent());
-    }
+
 
 }
