@@ -1,15 +1,14 @@
-package Gestion;
-
+package GestionFicheros;
+import java.util.*;
 import Clases.Persona;
-import Excepciones.ExcepcionPersona;
-import ClasesAbstractas.*;
-
+import ClasesAbstractas.Log;
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * Created by aortiz on 07/04/2017.
  */
-public class GestionFicheroBinario extends{
+public class FicheroLog extends Log{
 
     private File fichero=null;
     private FileInputStream flujoEntrada;
@@ -17,12 +16,16 @@ public class GestionFicheroBinario extends{
     private FileOutputStream flujoSalida=null;
     private ObjectOutputStream escritor=null;
 
-    GestionFicheroBinario(){
+    FicheroLog(){
+        GregorianCalendar fecha=new GregorianCalendar();
+        fecha.
         fichero=new File("ArchivoPorDefectoBin.dat");
     }
+
     public File getFile(){
         return this.fichero;
     }
+
     public void setFile(String nombreFichero){
         this.fichero=new File(nombreFichero);
     }
@@ -44,9 +47,9 @@ public class GestionFicheroBinario extends{
 
         }catch(FileNotFoundException e){System.out.println(e);}
     }
-    public void leerPersonas() {
+    public Persona[] leerPersonas() {
         Persona p = null;
-
+        List<Persona> lista=new ArrayList<Persona>();
         try {
             flujoEntrada = new FileInputStream(fichero.getName());
 
@@ -54,6 +57,7 @@ public class GestionFicheroBinario extends{
 
             try {
                 while ((p = new Persona((Persona) lector.readObject())) != null) {
+                    lista.add(p);
                     System.out.println(p.toString());
 
                 }
@@ -65,6 +69,7 @@ public class GestionFicheroBinario extends{
         } catch (IOException e) {
 
         }
+        return (Persona[]) lista.toArray();
     }
 
 
