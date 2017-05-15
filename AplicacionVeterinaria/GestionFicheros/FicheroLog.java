@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Created by aortiz on 07/04/2017.
  */
-public class FicheroLog extends Log{
+public class FicheroLog /*extends Log*/{
 
     private File fichero=null;
     private FileInputStream flujoEntrada;
@@ -18,8 +18,8 @@ public class FicheroLog extends Log{
 
     FicheroLog(){
         GregorianCalendar fecha=new GregorianCalendar();
-        fecha.
-        fichero=new File("ArchivoPorDefectoBin.dat");
+
+        File fichero=new File("ArchivoPorDefectoBin.dat");
     }
 
     public File getFile(){
