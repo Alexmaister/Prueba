@@ -42,26 +42,21 @@ public class FicheroMaster /*extends Master*/ {
                while (lector.hasNext()) {
                    aux=lector.nextLine();
                    s=aux.split(";");
-                   if(s.length>1)
-                   for(String l:s ) {
-                       relacion = convertidorStringMap(l);
-                       personas.add(relacion.values());
-                   }
-                   else{
-                       relacion = convertidorStringMap(s[0]);
-                       personas.add(relacion.values());
+                   for(int i=0;i<s.length;i++) {
+                       relacion=new LinkedHashMap<Persona,ArrayList<Mascota>>(convertidorStringMap(s[i]));
+                       personas.add(p=new Persona(relacion.keySet().toString()));
                    }
                }
        }catch(FileNotFoundException e){
            System.out.println(e);
-       }finally{
+       }catch(ExcepcionPersona ep){}finally{
            lector.close();
        }
         return personas;
     }
 
     private Map<Persona,ArrayList<Mascota>> convertidorStringMap(String mapa) {
-        Map<Persona,ArrayList<Mascota>> map=null;
+        Map<Persona,ArrayList<Mascota>> map=new LinkedHashMap<Persona,ArrayList<Mascota>>();
         Persona p = null;
         Mascota m = null;
         ArrayList<Mascota> lista = null;
@@ -70,16 +65,15 @@ public class FicheroMaster /*extends Master*/ {
         s = mapa.split("-");
         try {
             p = new Persona(s[0]);
-        } catch (ExcepcionPersona ep) {
-        }
-        s2 = s[1].split(",");
+            s2 = s[1].split(",");
             for (int i=0;i<s2.length;i++) {
-                try {
+
                     m = new Mascota(s2[i]);
                     lista.add(m);
-                } catch (ExcepcionMascota em) {
+
                 }
-            }
+            }catch (ExcepcionPersona ep) {
+            }catch(ExcepcionMascota em){}
         map.put(p,lista);
     return map;
     }
