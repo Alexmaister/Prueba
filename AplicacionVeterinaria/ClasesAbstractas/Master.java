@@ -7,8 +7,8 @@ import Clases.*;
 public abstract class Master {
 
     abstract void guardarRelacion(Map<Persona,ArrayList<Mascota>> relacion);
-    abstract List<Persona> leerPersonas();
-    abstract List<Mascota> leerMascotas(Persona p);
+    abstract Persona[] leerPersonas();
+    abstract List<ArrayList<Mascota>> leerMascotas(Persona p);
     abstract Map<Persona,List<Mascota>> obtenerRelaciones();
     abstract int mostrarMaster();
 }

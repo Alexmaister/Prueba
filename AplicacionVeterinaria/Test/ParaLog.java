@@ -1,15 +1,20 @@
 package Test;
 import java.util.*;
+
+import Gestion.GestionTiempo;
+import GestionFicheros.*;
+import Clases.*;
 /**
  * Created by aortiz on 15/05/2017.
  */
 public class ParaLog {
     public static void main (String... a){
-        String[] b,d,e;
-        GregorianCalendar c = new GregorianCalendar();
-        b=(c.getTime().toString().split(" "));
-        for(String aux:b)
-            System.out.println(aux);
-        System.out.println(c.getTime());
+        GestionTiempo gt=new GestionTiempo();
+        gt.pintarFecha();
+        System.out.println(gt.obtenerFecha().toString());
+
+        FicheroLog log=new FicheroLog();
+        log.evento(new Persona(),true);
+        log.mostrarLog('p');
     }
 }

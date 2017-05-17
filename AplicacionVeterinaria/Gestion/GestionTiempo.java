@@ -15,17 +15,30 @@ public class GestionTiempo {
 
     public GestionTiempo(){
         tiempo=new GregorianCalendar();
+        fecha=new Fecha();
+
     }
     public Fecha obtenerFecha(){
-        String[] f;
-        f=tiempo.toString().split(" ");
+        String[] f=this.tiempo.getTime().toString().split(" ");
+        String cadena=f[2]+"/"+convertidorMes(f[1])+"/"+f[5];
+        try {
+            fecha = new Fecha(cadena);
+        }catch(ExcepcionFecha ef){}
+        return this.fecha;
+    }
+
+    /*
+    @Deprecated
+    public Fecha obtenerFecha(){
+        Fecha fecha=new Fecha();
+
         try{
-            fecha= new Fecha(f[2]+","+convertidorMes(f[1])+","+f[5]);
+            fecha=new Fecha(f[2]+"/"+convertidorMes(f[1])+"/"+f[5]);
         }catch (ExcepcionFecha e){
             System.out.println(e);
         };
     return fecha;
-    }
+    }*/
     public String convertidorMes(String m){
         String mes=" ";
         switch (m){
@@ -68,11 +81,18 @@ public class GestionTiempo {
         }
         return mes;
     }
+
+    public Fecha getFecha(){
+        return this.fecha;
+    }
     public void pintarFecha(){
-        System.out.println(obtenerFecha());
+        System.out.println(this.fecha.toString());
     }
     public String obtenerCadena(){
-        return obtenerFecha().toString();
+        obtenerFecha();
+        String[] s=this.fecha.toString().split("/");
+        return s[0]+"-"+s[1]+"-"+s[2];
+
     }
 
 }

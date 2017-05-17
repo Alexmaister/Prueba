@@ -21,11 +21,12 @@ public class FicheroLog extends Log{
     private String nombreFichero="FicheroLogPersonas";
     private String nombreFicheroM="FicheroLogMascotas";
     private GestionTiempo gt;
-    FicheroLog(){
-        gt=new GestionTiempo();
 
-        File fichero=new File(
-                nombreFichero+gt.obtenerCadena()+".dat");
+
+    public FicheroLog(){
+        gt=new GestionTiempo();
+    String path=nombreFichero+gt.obtenerCadena()+".dat";
+        File fichero=new File(path);
     }
 
     public File getFile(){
@@ -44,9 +45,10 @@ public class FicheroLog extends Log{
     postcondiciones: el archivo de log con la fecha del dia actual se vera modificado con un registro mas, de no existir el fichero se creara
     * */
     public void evento(Persona p, boolean altaBaja){ //se escribira true en caso de estar dandose de alta y false si es una baja
-        setFile(nombreFichero+gt.obtenerCadena()+".dat");
         try {
-            flujoSalida = new FileOutputStream(fichero, true);
+            String path=nombreFichero+gt.obtenerCadena()+".dat";
+        fichero=new File(path);
+            flujoSalida = new FileOutputStream(fichero);
             try {
                 escritor=new ObjectOutputStream(flujoSalida){
                 @Override protected void writeStreamHeader(){}};
@@ -65,12 +67,7 @@ public class FicheroLog extends Log{
                 }
             }
         }catch(FileNotFoundException e){System.out.println(e);
-        }finally{
-            try {
-                flujoEntrada.close();
-            } catch (IOException e) {
 
-            }
         }
     }
 
@@ -177,14 +174,9 @@ public class FicheroLog extends Log{
                 }
             } catch (IOException e) {
                 error = 1;
-            }finally {
-            try {
-                flujoEntrada.close();
-            } catch (IOException e) {
-                error=9;
             }
 
-        }
+
         return error;
     }
     public int mostrarLogMascotas(){

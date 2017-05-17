@@ -21,6 +21,8 @@ public class PruebasMAster {
         //ps=master.leerPersonas();
         rel=master.obtenerRelaciones();
         gs.setMapa(rel);
+
         gs.mostrarMapa();
+        master.mostrarMaster();
     }
 }

@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * Created by Ale on 17/05/2017.
  */
-public class FicheroMaster /*extends Master*/ {
+public class FicheroMaster /*extends Master*/{
 
     File master=new File("Master.txt");
     Scanner lector;
@@ -58,8 +58,10 @@ public class FicheroMaster /*extends Master*/ {
 
     private Map<Persona,ArrayList<Mascota>> convertidorStringMap(String mapa) {
         Map<Persona,ArrayList<Mascota>> map=new LinkedHashMap<Persona,ArrayList<Mascota>>();
+
         Persona p = null;
-        ArrayList<Mascota> lista = null;
+        Mascota m= null;
+        ArrayList<Mascota> lista =new ArrayList<Mascota>();
         String[] s=null;
         String[] s2=null;
         s = mapa.split("-");
@@ -67,15 +69,43 @@ public class FicheroMaster /*extends Master*/ {
             p = new Persona(s[0]);
             s2 = s[1].split(",");
             for (int i=0;i<s2.length;i++) {
-
-                lista.add(new Mascota(s2[i]));
+                m=new Mascota(s2[i]);
+                lista.add(m);
 
 
                 }
             }catch (ExcepcionPersona ep) {
             }catch(ExcepcionMascota em){}
+
         map.put(p,lista);
     return map;
     }
 
+    public Persona[] leerPersonas(){
+
+        Map<Persona,ArrayList<Mascota>> map=obtenerRelaciones();
+        Persona[] p= (Persona[]) map.keySet().toArray();
+        return p;
+    }
+
+    public List<Mascota> leerMascotas(Persona p){
+
+        Map<Persona,ArrayList<Mascota>> map=obtenerRelaciones();
+        return map.get(p);
+
+    }
+
+    public int mostrarMaster(){
+        try {
+            Scanner lector = new Scanner(master);
+
+            while(lector.hasNext()){
+
+                System.out.println(lector.nextLine());
+
+            }
+        }catch(FileNotFoundException e){}
+
+     return 0;
+    }
 }

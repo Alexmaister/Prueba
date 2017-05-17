@@ -55,18 +55,19 @@ public class Mascota implements Cloneable,Serializable{
     public Mascota(String mascota)throws ExcepcionMascota{
         this();
 
-        List atributos=Arrays.asList(mascota.split("."));
-        if(atributos.size() !=5)throw new ExcepcionMascota("¡¡Error!!:Los atributos no corresponden al numero deseado");
-        else {
-            this.setNombre((String)atributos.get(0));
+        String[] atributos=mascota.split(":");
+        if(atributos.length !=5) {
+            throw new ExcepcionMascota("¡¡Error!!:Los atributos no corresponden al numero deseado");
+        }else {
+            this.setNombre((String)atributos[0]);
             try {
-                this.setFechaNacimiento(new Fecha((String) atributos.get(1)));
+                this.setFechaNacimiento(new Fecha((String) atributos[1]));
             } catch (ExcepcionFecha excepcionFecha) {
                 System.out.println(excepcionFecha);
             }
-            this.setSexo(((String)atributos.get(2)).charAt(0));
-            this.setRaza((String)atributos.get(3));
-            this.setEspecie((String)atributos.get(4));
+            this.setSexo(((String)atributos[2]).charAt(0));
+            this.setRaza((String)atributos[3]);
+            this.setEspecie((String)atributos[4]);
         }
     }
     public Mascota(Mascota mascota){
@@ -135,7 +136,7 @@ public class Mascota implements Cloneable,Serializable{
     }
     @Override
     public String toString(){
-        return nombre+"."+fechaNacimiento+"."+sexo+"."+raza+"."+especie;
+        return nombre+":"+fechaNacimiento+":"+sexo+":"+raza+":"+especie;
     }
     @Override
     public int hashCode(){
