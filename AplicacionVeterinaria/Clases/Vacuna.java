@@ -14,12 +14,12 @@ public class Vacuna implements  Cloneable{
     private String agenteAc;
 
     public Vacuna() {
-        nombre = "Rabia";
-        dosis = 0.50;
+        nombre = " ";
+        dosis = 0.0;
         enfermedades = new ArrayList<Enfermedad>();
         enfermedades.add(new Enfermedad());
-        concentracion = 0.5;
-        agenteAc = "Rubiminuoxitona";
+        concentracion = 0.0;
+        agenteAc = " ";
 
     }
 

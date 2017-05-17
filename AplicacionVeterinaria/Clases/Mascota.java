@@ -54,7 +54,7 @@ public class Mascota implements Cloneable,Serializable{
     //constructor por cadena
     public Mascota(String mascota)throws ExcepcionMascota{
         this();
-        List atributos=Arrays.asList(mascota.split(","));
+        List atributos=Arrays.asList(mascota.split("."));
         if(atributos.size()!=5)throw new ExcepcionMascota("¡¡Error!!:Los atributos no corresponden al numero deseado");
         else {
             this.setNombre((String)atributos.get(0));
@@ -134,7 +134,7 @@ public class Mascota implements Cloneable,Serializable{
     }
     @Override
     public String toString(){
-        return nombre+","+fechaNacimiento+","+sexo+","+raza+","+especie;
+        return nombre+"."+fechaNacimiento+"."+sexo+"."+raza+"."+especie;
     }
     @Override
     public int hashCode(){

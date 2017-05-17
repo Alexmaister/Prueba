@@ -18,7 +18,9 @@ public class GestionMapaClienteMascota
     Persona p;
     List<Mascota> t;
 
-
+    public void setMapa(Map<Persona,ArrayList<Mascota>> mapa){
+        mapaClienteMascota=mapa;
+    }
     public Map<Persona,ArrayList<Mascota>> getMapa(){
         return this.mapaClienteMascota;
     }
@@ -113,6 +115,16 @@ public class GestionMapaClienteMascota
             System.out.println("-------------------------------------------");
             i++;
         }
+    }
+    public String mapaACadena(){
+        String cadena="";
+        Iterator entries = mapaClienteMascota.entrySet().iterator();
+        while (entries.hasNext()) {
+            Map.Entry entry = (Map.Entry) entries.next();
+            cadena+=entry.getKey().toString()+"-"+entry.getValue().toString().substring(1,(entry.getValue().toString().length()-1))+";";
+
+        }
+        return cadena;
     }
 
 }

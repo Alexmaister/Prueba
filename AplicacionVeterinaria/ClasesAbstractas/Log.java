@@ -6,8 +6,8 @@ import Clases.*;
 public abstract class Log {
 
 
-    abstract void mostarLog();
+   public abstract int mostrarLog(char f);
    // abstract void crearLog(Fecha f);
-    abstract void evento(Persona p,String estado);
-    abstract void evento(Mascota m, String estado);
+    public abstract void evento(Persona p,boolean altaBaja);
+    public abstract void evento(Mascota m,boolean altaBaja);
 }
