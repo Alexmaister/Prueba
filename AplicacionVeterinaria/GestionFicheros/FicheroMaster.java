@@ -17,7 +17,9 @@ public class FicheroMaster /*extends Master*/ {
     Scanner lector;
     FileWriter escritor ;
     GestionMapaClienteMascota gmapa=new GestionMapaClienteMascota();
-   public void guardarRelacion(Map<Persona,ArrayList<Mascota>> relacion) {
+
+
+    public void guardarRelacion(Map<Persona,ArrayList<Mascota>> relacion) {
     gmapa.setMapa(relacion);
        try {
            escritor= new FileWriter(master,true);
@@ -31,34 +33,32 @@ public class FicheroMaster /*extends Master*/ {
        }
    }
 
-    public List<Persona> leerPersonas(){
-       List personas=new ArrayList<Persona>();
-       Persona p=null;
+    public Map<Persona,ArrayList<Mascota>> obtenerRelaciones(){
        String aux=null;
        String[] s={""};
-       Map<Persona,ArrayList<Mascota>> relacion=null;
+       Map<Persona,ArrayList<Mascota>> relacion=new LinkedHashMap<Persona,ArrayList<Mascota>>();
        try {
            lector = new Scanner(master);
                while (lector.hasNext()) {
                    aux=lector.nextLine();
                    s=aux.split(";");
                    for(int i=0;i<s.length;i++) {
-                       relacion=new LinkedHashMap<Persona,ArrayList<Mascota>>(convertidorStringMap(s[i]));
-                       personas.add(p=new Persona(relacion.keySet().toString()));
+                       relacion.putAll(convertidorStringMap(s[i]));
+                       //relacion=new LinkedHashMap<Persona,ArrayList<Mascota>>(convertidorStringMap(s[i]));
+                       //personas.add(p=new Persona(relacion.keySet().toString()));
                    }
                }
-       }catch(FileNotFoundException e){
+       }catch(FileNotFoundException e) {
            System.out.println(e);
-       }catch(ExcepcionPersona ep){}finally{
+       }finally{
            lector.close();
        }
-        return personas;
+        return relacion;
     }
 
     private Map<Persona,ArrayList<Mascota>> convertidorStringMap(String mapa) {
         Map<Persona,ArrayList<Mascota>> map=new LinkedHashMap<Persona,ArrayList<Mascota>>();
         Persona p = null;
-        Mascota m = null;
         ArrayList<Mascota> lista = null;
         String[] s=null;
         String[] s2=null;
@@ -68,8 +68,8 @@ public class FicheroMaster /*extends Master*/ {
             s2 = s[1].split(",");
             for (int i=0;i<s2.length;i++) {
 
-                    m = new Mascota(s2[i]);
-                    lista.add(m);
+                lista.add(new Mascota(s2[i]));
+
 
                 }
             }catch (ExcepcionPersona ep) {

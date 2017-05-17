@@ -1,4 +1,5 @@
 package Test;
+import Gestion.GestionMapaClienteMascota;
 import GestionFicheros.FicheroMaster;
 import java.util.*;
 import Clases.*;
@@ -13,10 +14,13 @@ public class PruebasMAster {
         Mascota m=new Mascota();
         ArrayList l=new ArrayList<Mascota>();
         List<Persona> ps=null;
+        GestionMapaClienteMascota gs=new GestionMapaClienteMascota();
         l.add(m);
         rel.put(p,l);
         master.guardarRelacion(rel);
-        ps=master.leerPersonas();
-        System.out.println(ps);
+        //ps=master.leerPersonas();
+        rel=master.obtenerRelaciones();
+        gs.setMapa(rel);
+        gs.mostrarMapa();
     }
 }
