@@ -12,12 +12,10 @@ public class ParaLog {
         GestionTiempo gt=new GestionTiempo();
       //  gt.pintarFecha();
       //  System.out.println(gt.obtenerFecha().toString());
-
+        Registro<Registro<String,Mascota>,Character> registro= new Registro<Registro<String,Mascota>,Character>();
         FicheroLog log=new FicheroLog();
-        log.evento(new Persona(),true);
-        log.evento(new Persona(),true);
-        log.evento(new Persona(),true);
-        Fecha f=new Fecha(17,5,2017);
-        int i=log.mostrarLog('p',f);
+        log.eventoM(new Registro<Registro<String,Mascota>,Character>( new Registro<String,Mascota>(new Persona().getDNI(),new Mascota()),'A') );
+        log.eventoM(new Registro<Registro<String,Mascota>,Character>( new Registro<String,Mascota>(new Persona().getDNI(),new Mascota()),'A') );
+        int i=log.mostrarLog('m',gt.obtenerFecha());
     }
 }

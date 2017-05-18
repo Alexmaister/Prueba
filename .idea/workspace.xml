@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922e663e-f838-406d-81dd-108d140df89f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Registro.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FicheroLogMascotas18-5-2017.dat" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FicheroLogPersonas17-5-2017.dat" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/ClasesAbstractas/Log.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/ClasesAbstractas/Log.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$1.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$2.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$3.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$4.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$5.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Test/ParaLog.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Test/ParaLog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionTiempo.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionTiempo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FicheroLogPersonas18-5-2017.dat" afterPath="$PROJECT_DIR$/FicheroLogPersonas18-5-2017.dat" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,23 +30,81 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ParaLog.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ParaLog.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="377">
+              <caret line="17" column="144" lean-forward="false" selection-start-line="17" selection-start-column="144" selection-end-line="17" selection-end-column="144" />
               <folding>
-                <marker date="1495081219162" expanded="true" signature="586:594" ph="{...}" />
+                <element signature="e#427#463#0" expanded="true" />
+                <marker date="1495089783973" expanded="true" signature="848:856" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FicheroLog.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FicheroLogPersonas18-5-2017.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FicheroLogPersonas18-5-2017.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FicheroLog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="174" column="68" lean-forward="false" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="68" />
+            <state relative-caret-position="318">
+              <caret line="185" column="132" lean-forward="false" selection-start-line="185" selection-start-column="132" selection-end-line="185" selection-end-column="132" />
+              <folding>
+                <element signature="docComment;class#FicheroLog#0" expanded="false" />
+                <element signature="method#FicheroLog#0;class#FicheroLog#0" expanded="false" />
+                <element signature="method#eventoP#0;class#FicheroLog#0" expanded="false" />
+                <element signature="method#eventoM#0;class#FicheroLog#0" expanded="false" />
+                <element signature="method#leerPersonas#0;class#FicheroLog#0" expanded="false" />
+                <element signature="e#3246#3255#0" expanded="true" />
+                <element signature="method#mostrarLog#0;class#FicheroLog#0" expanded="false" />
+                <element signature="method#mostrarLogPersonas#0;class#FicheroLog#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Registro.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Registro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -82,14 +151,15 @@
         <option value="$PROJECT_DIR$/Diario.dat" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Enums/TamañoRegistroMascota.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Diario.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Master.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroMaster.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionTiempo.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Fecha.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" />
         <option value="$PROJECT_DIR$/FicheroLogPersonas18-5-2017.dat" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Registro.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java" />
       </list>
     </option>
@@ -121,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -260,6 +329,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -803,6 +873,7 @@
       <workItem from="1494989671287" duration="3771000" />
       <workItem from="1495002149969" duration="13092000" />
       <workItem from="1495066661974" duration="15638000" />
+      <workItem from="1495085815407" duration="4338000" />
     </task>
     <task id="LOCAL-00001" summary="o">
       <created>1493365260818</created>
@@ -829,7 +900,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56593000" />
+    <option name="totallyTimeSpent" value="60931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -849,9 +920,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -863,6 +933,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -880,17 +951,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39806867" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32725322" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.49307036" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33583692" sideWeight="0.49307036" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -932,12 +1003,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java</url>
-          <line>16</line>
+          <line>18</line>
           <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -946,24 +1017,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <marker date="1495081219162" expanded="true" signature="586:594" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -976,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +1044,8 @@
         <state relative-caret-position="203">
           <caret line="7" column="1" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="7" selection-end-column="1" />
           <folding>
-            <marker date="1495081219162" expanded="true" signature="586:594" ph="{...}" />
+            <element signature="e#427#463#0" expanded="true" />
+            <marker date="1495089783973" expanded="true" signature="848:856" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1002,7 +1054,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#FicheroLog#0" expanded="false" />
+            <element signature="method#FicheroLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoP#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoM#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#leerPersonas#0;class#FicheroLog#0" expanded="false" />
+            <element signature="e#3246#3255#0" expanded="true" />
+            <element signature="method#mostrarLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#mostrarLogPersonas#0;class#FicheroLog#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,7 +1079,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#FicheroLog#0" expanded="false" />
+            <element signature="method#FicheroLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoP#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoM#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#leerPersonas#0;class#FicheroLog#0" expanded="false" />
+            <element signature="e#3246#3255#0" expanded="true" />
+            <element signature="method#mostrarLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#mostrarLogPersonas#0;class#FicheroLog#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,7 +1104,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#FicheroLog#0" expanded="false" />
+            <element signature="method#FicheroLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoP#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoM#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#leerPersonas#0;class#FicheroLog#0" expanded="false" />
+            <element signature="e#3246#3255#0" expanded="true" />
+            <element signature="method#mostrarLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#mostrarLogPersonas#0;class#FicheroLog#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,12 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#243#252#0" expanded="false" />
-            <element signature="e#291#292#0" expanded="false" />
-            <element signature="e#332#333#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2062">
           <caret line="675" column="0" lean-forward="false" selection-start-line="675" selection-start-column="0" selection-end-line="675" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="17" column="105" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="105" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,15 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,7 +1258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-645">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,15 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-232">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1276,7 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1284,7 +1328,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Registro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,21 +1363,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java">
+    <entry file="file://$PROJECT_DIR$/FicheroLogMascotas18-5-2017.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1495081219162" expanded="true" signature="586:594" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="174" column="68" lean-forward="false" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="318">
+          <caret line="185" column="132" lean-forward="false" selection-start-line="185" selection-start-column="132" selection-end-line="185" selection-end-column="132" />
+          <folding>
+            <element signature="docComment;class#FicheroLog#0" expanded="false" />
+            <element signature="method#FicheroLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoP#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#eventoM#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#leerPersonas#0;class#FicheroLog#0" expanded="false" />
+            <element signature="e#3246#3255#0" expanded="true" />
+            <element signature="method#mostrarLog#0;class#FicheroLog#0" expanded="false" />
+            <element signature="method#mostrarLogPersonas#0;class#FicheroLog#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="17" column="144" lean-forward="false" selection-start-line="17" selection-start-column="144" selection-end-line="17" selection-end-column="144" />
+          <folding>
+            <element signature="e#427#463#0" expanded="true" />
+            <marker date="1495089783973" expanded="true" signature="848:856" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

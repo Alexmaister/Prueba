@@ -3,7 +3,6 @@ import java.util.*;
 import Clases.*;
 import Gestion.*;
 import ClasesAbstractas.Log;
-import jdk.nashorn.internal.ir.annotations.Immutable;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -37,14 +36,14 @@ public class FicheroLog extends Log{
         this.fichero=new File(nombreFichero+fecha+".dat");
     }
 
-    /*cabecera: void evento(Persona p,boolean altaBaja)
+    /*cabecera: void eventoP(Registro<Persona,Character> registro)
     descripcion:procedimiento que registrara un evento de baja o alta de una persona en el fichero de log
-    entradas:objeto a escribir y boleano para indicar alta o baja
+    entradas:Registro<Persona,Character>
     precondiciones: ninguna
     salidas: ninguna
     postcondiciones: el archivo de log con la fecha del dia actual se vera modificado con un registro mas, de no existir el fichero se creara
     * */
-    public void evento(Persona p, boolean altaBaja){ //se escribira true en caso de estar dandose de alta y false si es una baja
+    public void eventoP(Registro<Persona,Character> registro){
         try {
             String path=nombreFichero+gt.obtenerCadena()+".dat";
         fichero=new File(path);
@@ -52,16 +51,11 @@ public class FicheroLog extends Log{
             try {
                 escritor=new ObjectOutputStream(flujoSalida){@Override protected void writeStreamHeader(){}};
 
-                escritor.writeObject(p);
-                escritor.writeBoolean(altaBaja);
+                escritor.writeObject(registro);
 
-               //flujoSalida.close();
-            } catch (IOException e) {
-               System.out.println(e);
-            }finally{try{escritor.close();} catch(IOException e){}}
 
-        }catch(FileNotFoundException e){System.out.println(e);
-        }finally {try {flujoSalida.close();} catch (IOException e) {}}
+            } catch (IOException e) {System.out.println(e);}finally{try {escritor.close();} catch (IOException e) {}}
+        }catch(FileNotFoundException e){System.out.println(e);}finally{try {flujoSalida.close();} catch (IOException e) {}}
     }
     /*cabecera: void evento(MAscota m,boolean altaBaja)
        descripcion:procedimiento que registrara un evento de baja o alta de una mascota en el fichero de log
@@ -70,33 +64,19 @@ public class FicheroLog extends Log{
        salidas: ninguna
        postcondiciones: el archivo de log con la fecha del dia actual se vera modificado con un registro mas, de no existir el fichero se creara
        * */
-    public void evento(Mascota m,boolean altaBaja){
-        setFile(nombreFicheroM+gt.obtenerCadena()+".dat");
-
-        try{
-            flujoSalida=new FileOutputStream(fichero,true);
-            try{
-                escritor=new ObjectOutputStream(flujoSalida){@Override protected void writeStreamHeader(){}};
-                escritor.writeObject(m);
-               // escritor.writeBoolean(altaBaja);
-
-            }catch(IOException e){
-                System.out.println(e);
-            }finally{
-            try{
-                escritor.close();
-            } catch(IOException e){
-
-            }
-        }
-        }catch(FileNotFoundException e){
-            System.out.println(e);
-        }finally{
+    public void eventoM(Registro<Registro<String,Mascota>,Character> registro){
+        try {
+            String path=nombreFicheroM+gt.obtenerCadena()+".dat";
+            fichero=new File(path);
+            flujoSalida = new FileOutputStream(fichero,true);
             try {
-                flujoEntrada.close();
-            } catch (IOException e) {
-            }
-        }
+                escritor=new ObjectOutputStream(flujoSalida){@Override protected void writeStreamHeader(){}};
+
+                escritor.writeObject(registro);
+
+
+            } catch (IOException e) {System.out.println(e);}finally{try {escritor.close();} catch (IOException e) {}}
+        }catch(FileNotFoundException e){System.out.println(e);}finally{try {flujoSalida.close();} catch (IOException e) {}}
     }
     @Deprecated
     public Persona[] leerPersonas() {
@@ -118,9 +98,7 @@ public class FicheroLog extends Log{
 
             lector.close();
             flujoEntrada.close();
-        } catch (IOException e) {
-
-        }
+       } catch (IOException e) {}//try {flujoEntrada.close();} catch (IOException e) {}}
         return (Persona[]) lista.toArray();
     }
 
@@ -162,33 +140,29 @@ public class FicheroLog extends Log{
     public int mostrarLogPersonas(Fecha f){
         String[] fecha=f.toString().split("/");
         int error=0;
+        Registro<Persona,Character> registro=null;
         Persona p = null;
-        Boolean b=null;
+        Character c=null;
         try {
-            try {
+
             flujoEntrada = new FileInputStream(nombreFichero+fecha[0]+"-"+fecha[1]+"-"+fecha[2]+".dat");
 
             lector = new ObjectInputStream(flujoEntrada) {@Override protected void readStreamHeader() {}};
 
-
-                    while (((p =(Persona) lector.readObject()) != null) && ((b=lector.readBoolean())!=null)) {
-                        System.out.println(p.toString() + "-->" +b);
+            try {
+                    while ( (registro=new Registro<Persona,Character>((Registro<Persona,Character>)lector.readObject()))!=null ) {
+                       registro.mostarRegistro();
 
                     }
 
                 } catch (ClassNotFoundException e) {
                     error = 5;
-                }finally{
-
-                }
+                }finally{lector.close();}
             } catch (IOException e) {
                 error = 1;
-            }finally {
-            try {lector.close();} catch (IOException e) {}
-            try{flujoEntrada.close();}catch(IOException e){}}
+            }finally{try {flujoEntrada.close();} catch (IOException e) {}}
 
-
-        return error;
+            return error;
     }
 
     /*cabecera: int mostrarLogMAscotas()
@@ -201,26 +175,26 @@ public class FicheroLog extends Log{
     public int mostrarLogMascotas(Fecha f){
         String[] fecha=f.toString().split("/");
         int error=0;
-        Mascota m = null;
-        Boolean b=null;
+        Registro<Registro<String,Mascota>,Character> registro=null;
         try {
             flujoEntrada = new FileInputStream(nombreFicheroM+fecha[0]+"-"+fecha[1]+"-"+fecha[2]+".dat");
 
             lector = new ObjectInputStream(flujoEntrada) {@Override protected void readStreamHeader() {}};
 
             try {
-                while ((((m = new Mascota((Mascota) lector.readObject())) != null)&&(b=lector.readBoolean())!=null)) {
-                    System.out.println(m.toString() + "-->" + b);
+                while ( (registro=new Registro<Registro<String,Mascota>,Character>((Registro<Registro<String,Mascota>,Character>)lector.readObject()))!=null ) {
+                    System.out.println(registro.obtenerObjeto().obtenerObjeto().toString()+"-->"+registro.obtenerAccion().toString()+"--> "+registro.obtenerAccion());
 
                 }
+
             } catch (ClassNotFoundException e) {
                 error = 5;
-            }finally{
-                lector.close();
-            }
+            }finally{lector.close();}
         } catch (IOException e) {
             error = 1;
-        }
+        }finally{try {flujoEntrada.close();} catch (IOException e) {}}
+
+
         return error;
     }
 
