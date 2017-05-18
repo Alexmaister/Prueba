@@ -9,7 +9,8 @@ public enum TamañoRegistroMascota {
     sex(20),
     raz(22),
     esp(32),
-    total(42);
+    esc(35),
+    total(45);
 
     private final int bytes;
 

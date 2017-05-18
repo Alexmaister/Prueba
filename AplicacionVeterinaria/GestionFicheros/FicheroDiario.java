@@ -85,6 +85,33 @@ public class FicheroDiario /*extends Diario*/{
         }catch(FileNotFoundException efnf){}catch (IOException e){}
     }
 
+    /*cabecera: void guardarMascota(Mascota m)
+    descripcion: procedimiento que guardara una mascota en el archivo de diarioMascota
+    entradas: objeto mascota
+    precondiciones:ninguna
+    * */
+    public void guardarmascota(Mascota m){
+
+        numeroRegistro=contarRegistrosMascotas();
+        int posicion=numeroRegistro * bytesM.total.getBytes();
+        try {
+            flujo = new RandomAccessFile(diarioMascota, "rw");
+            flujo.seek(posicion);
+            flujo.writeBytes(m.getNombre());
+            flujo.seek(posicion+bytesM.f.getBytes());
+            flujo.writeBytes(m.getFechaNacimiento().toString());
+            flujo.seek(posicion+bytesM.sex.getBytes());
+            flujo.writeBytes(Character.toString(m.getSexo()));
+            flujo.seek(posicion+bytesM.raz.getBytes());
+            flujo.writeBytes(m.getRaza());
+            flujo.seek(posicion+bytesM.esp.getBytes());
+            flujo.writeBytes(m.getEspecie());
+            flujo.seek(posicion+bytesM.esc.getBytes());
+            flujo.writeChars("\n");
+        }catch(FileNotFoundException efnf){}catch (IOException e){}
+    }
+
+
     /*cabecera: void validarAtributosPersona(Persona p)
     descripcion: procedimiento que modificara los atributos de una persona, acortandolos, si sobrepasan una longitud
     entradas/salidas: Persona a modificar

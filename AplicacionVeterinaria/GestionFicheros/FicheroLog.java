@@ -183,7 +183,7 @@ public class FicheroLog extends Log{
 
             try {
                 while ( (registro=new Registro<Registro<String,Mascota>,Character>((Registro<Registro<String,Mascota>,Character>)lector.readObject()))!=null ) {
-                    System.out.println(registro.obtenerObjeto().obtenerObjeto().toString()+"-->"+registro.obtenerAccion().toString()+"--> "+registro.obtenerAccion());
+                    System.out.println(registro.obtenerObjeto().obtenerObjeto().toString()+"-->"+registro.obtenerObjeto().obtenerAccion().toString()+"--> "+registro.obtenerAccion());
 
                 }
 
