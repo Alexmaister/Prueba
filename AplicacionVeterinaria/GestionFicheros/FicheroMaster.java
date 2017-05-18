@@ -11,14 +11,18 @@ import java.util.*;
 /**
  * Created by Ale on 17/05/2017.
  */
-public class FicheroMaster /*extends Master*/{
+public class FicheroMaster extends Master{
 
     File master=new File("Master.txt");
     Scanner lector;
     FileWriter escritor ;
     GestionMapaClienteMascota gmapa=new GestionMapaClienteMascota();
 
-
+    /*cabecera: void guardarRelacion(Map<Persona,ArrayList<Mascota>> relacion)
+    descripcion: procedimiento que guardara en el master una relacion de persona con sus mascotas
+    entradas: un mapa de personas como clave y una lista de mascotas como valor
+    precondiciones:ninguna
+    * */
     public void guardarRelacion(Map<Persona,ArrayList<Mascota>> relacion) {
     gmapa.setMapa(relacion);
        try {
@@ -33,6 +37,11 @@ public class FicheroMaster /*extends Master*/{
        }
    }
 
+   /*cabecera: Map<Persona,ArrayList<Mascota>> obtenerRelaciones()
+   descripcion: funcion que devolvera todas las relaciones leidas en el fichero master
+   salidas: un mapa con persona como valor y una lista de mascotas como clave
+   postcondiciones: se devolvera un mapa asociado al nombre
+   * */
     public Map<Persona,ArrayList<Mascota>> obtenerRelaciones(){
        String aux=null;
        String[] s={""};
@@ -56,6 +65,14 @@ public class FicheroMaster /*extends Master*/{
         return relacion;
     }
 
+    /*cabecera: Map<Persona,ArrayList<Mascota>> convertidorStringMap(String mapa)
+    descripcion: funcion que transformara un String pasado por parametros en un mapa de relaciones con personas como valor y una lista de mascotas como valor
+    entrads: un string
+    precondiciones:el string debe contener los datos adecuados y con el formato de la funcion mapaACadena()
+                    de la clase de gestion GestionMapaClienteMascota para poder transformarlo
+    salidas: un mapa de relaciones con personas como claves y una lista de mascotas como valores
+    postcondiciones: se devolvera el mapa asociado al nombre
+    * */
     private Map<Persona,ArrayList<Mascota>> convertidorStringMap(String mapa) {
         Map<Persona,ArrayList<Mascota>> map=new LinkedHashMap<Persona,ArrayList<Mascota>>();
 
@@ -80,21 +97,35 @@ public class FicheroMaster /*extends Master*/{
         map.put(p,lista);
     return map;
     }
-
-    public Persona[] leerPersonas(){
+    /*cabecera: Personas[] obtenerPersonas()
+    descripcion: funcion que devolvera un array de personas leidas del fichero master
+    salidas: un array de personas
+    postcondiciones: se devolvera asociaso al nombre un array con todas las personas del archivo master
+    * */
+    public Persona[] obtenerPersonas(){
 
         Map<Persona,ArrayList<Mascota>> map=obtenerRelaciones();
         Persona[] p= (Persona[]) map.keySet().toArray();
         return p;
     }
-
-    public List<Mascota> leerMascotas(Persona p){
+    /*cabecera: ArrayList<Mascota> obtenerMascotas(Persona p)
+    descripcion: funcion que devolvera un array de mascotas de una persona leidas del fichero master
+    salidas: una lista de mascotas
+    postcondiciones: se devolvera asociaso al nombre una lista con todas las mascotas de una persona del archivo master
+    * */
+    public ArrayList<Mascota> obtenerMascotas(Persona p){
 
         Map<Persona,ArrayList<Mascota>> map=obtenerRelaciones();
         return map.get(p);
 
     }
 
+
+    /*cabecera: int mostrarMaster()
+    descripcion: funcion que mostrara en pantalla todos los refistros del archivo master
+    salidas: un entero
+    postcondiciones: se devolvera un entero asociado al nombre, para indicar si hubo algun error, 0=No
+    * */
     public int mostrarMaster(){
         try {
             Scanner lector = new Scanner(master);

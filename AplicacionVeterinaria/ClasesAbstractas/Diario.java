@@ -8,17 +8,16 @@ import java.util.*;
  */
 abstract class Diario {
 
-    abstract void guardarPersona(Persona p);
-    abstract void guardarMascota(Mascota m);
-    abstract int buscarPersona(String nombre,String apellidos);
-    abstract int buscarPersona(String DNI);
-    abstract int buscarPersona(Mascota m);
-    abstract int buscarMascota(Persona p);
-    abstract int buscarMascota(String nombre);
-    abstract void eliminarPersona(int pos);
-    abstract void eliminarMascota(int pos);
-    abstract Persona obtenerPersona(int pos);
-    abstract void mostrarPersonas();
-    abstract void mostrarMascotas();
-    abstract List<Mascota> obtenerMascota(int pos);
+    public abstract void guardarPersona(Persona p);
+    public abstract void guardarMascota(Mascota m);
+    public abstract void modificarPersona(int pos);
+    public abstract void modificarAtributoPersona(int pos);
+    public abstract void modificarMascota(int pos);
+    public abstract void modificarAtributoMascota(int pos);
+    public abstract void borrarPersona(int pos);
+    public abstract void borrarMascota(int pos);
+    public abstract void mostarDiario();
+    public abstract void mostrarDiarioMascota();
+    public abstract Persona obtenerPersona(int pos);
+    public abstract List<Mascota> obtenerMascota(int pos);
 }

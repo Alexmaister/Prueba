@@ -5,11 +5,11 @@ package Enums;
  */
 public enum TamañoRegistroMascota {
     nom(0),
-    f(20),
-    sex(40),
-    raz(42),
-    esp(62),
-    total(82);
+    f(10),
+    sex(20),
+    raz(22),
+    esp(32),
+    total(42);
 
     private final int bytes;
 

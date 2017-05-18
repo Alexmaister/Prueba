@@ -70,7 +70,13 @@ public class FicheroLog extends Log{
 
         }
     }
-
+    /*cabecera: void evento(MAscota m,boolean altaBaja)
+       descripcion:procedimiento que registrara un evento de baja o alta de una mascota en el fichero de log
+       entradas:objeto a escribir y boleano para indicar alta o baja
+       precondiciones: ninguna
+       salidas: ninguna
+       postcondiciones: el archivo de log con la fecha del dia actual se vera modificado con un registro mas, de no existir el fichero se creara
+       * */
     public void evento(Mascota m,boolean altaBaja){
         setFile(nombreFicheroM+gt.obtenerCadena()+".dat");
 
@@ -133,7 +139,7 @@ public class FicheroLog extends Log{
     postcondiciones:El entero resultante sera 0 si no hay ningun error , o > de 0 expresando el error, se mostrara en pantalla toda la informacion
     del archivo de log actual de mascotas o personas
     * */
-    public int mostrarLog(char f){
+    public int mostrarLog(char f,Fecha fch){
         int error=0;
         f=Character.toUpperCase(f);
         if(f!='P' && f!='M')
@@ -143,22 +149,29 @@ public class FicheroLog extends Log{
             switch(f){
                 case 'P':
 
-                    error=mostrarLogPersonas();
+                    error=mostrarLogPersonas(fch);
                     break;
                 case 'M':
 
-                    error=mostrarLogMascotas();
+                    error=mostrarLogMascotas(fch);
                     break;
             }
         }
       return error;
     }
-
-    public int mostrarLogPersonas(){
+    /*cabecera: int mostrarLogPersonas()
+    descripcion: funcion que mostrara en pantalla el fichero de los de personas de la fecha indicada por parametros
+    entradas: una fecha
+    precondiciones:ninguna
+    salidas:un entero
+    postcondiciones: el entero sera distinto de 0 de existir algun error
+    * */
+    public int mostrarLogPersonas(Fecha f){
+        String[] fecha=f.toString().split("/");
         int error=0;
         Persona p = null;
         try {
-            flujoEntrada = new FileInputStream(fichero.getName());
+            flujoEntrada = new FileInputStream(nombreFichero+fecha[0]+"-"+fecha[1]+"-"+fecha[2]);
 
             lector = new ObjectInputStream(flujoEntrada) {@Override protected void readStreamHeader() {}};
 
@@ -179,11 +192,20 @@ public class FicheroLog extends Log{
 
         return error;
     }
-    public int mostrarLogMascotas(){
+
+    /*cabecera: int mostrarLogMAscotas()
+    descripcion: funcion que mostrara en pantalla el fichero de los de mascotas de la fecha indicada por parametros
+    entradas: una fecha
+     precondiciones:ninguna
+    salidas:un entero
+    postcondiciones: el entero sera distinto de 0 de existir algun error
+ * */
+    public int mostrarLogMascotas(Fecha f){
+        String[] fecha=f.toString().split("/");
         int error=0;
         Mascota m = null;
         try {
-            flujoEntrada = new FileInputStream(fichero.getName());
+            flujoEntrada = new FileInputStream(nombreFicheroM+fecha[0]+"-"+fecha[1]+"-"+fecha[2]);
 
             lector = new ObjectInputStream(flujoEntrada) {@Override protected void readStreamHeader() {}};
 
