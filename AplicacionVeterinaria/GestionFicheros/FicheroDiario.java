@@ -4,6 +4,7 @@ import java.io.RandomAccessFile;
 import Clases.*;
 import Enums.TamañoRegistroMascota;
 import Enums.TamañoRegistroPersona;
+import Excepciones.ExcepcionDiario;
 
 /**
  * Created by aortiz on 17/05/2017.
@@ -27,7 +28,7 @@ public class FicheroDiario /*extends Diario*/{
     * entradas:ninguna
     * salidas:un entero
     * postcondiciones:asociado al nombre se devolvera el numero de registros*/
-    private int contarRegistrosPersonas(){
+    public int contarRegistrosPersonas(){
         int registros=0;
         try {
             flujo = new RandomAccessFile(diario, "r");
@@ -42,7 +43,7 @@ public class FicheroDiario /*extends Diario*/{
     * entradas:ninguna
     * salidas:un entero
     * postcondiciones:asociado al nombre se devolvera el numero de registros*/
-    private int contarRegistrosMascotas(){
+    public int contarRegistrosMascotas(){
         int registros=0;
         try{
             flujo=new RandomAccessFile(diarioMascota,"r");
@@ -53,12 +54,13 @@ public class FicheroDiario /*extends Diario*/{
         return registros;
     }
     /*cabecra: void guardarPersona(Persona p)
-    * descripcion: procedimiento que escribira al final del fichero diario una  persona
-    * entradas:una persona
+    * descripcion: procedimiento que escribira en la posicion deseada del fichero diario una  persona de quererse incluir
+    * en la posicion final , establezca pos como una llamada a la funcion contarRegistrosPersona
+    * entradas:una persona,
     * precondiciones:ninguna*/
-    public void  guardarPersona (Persona p) {
-        numeroRegistro=contarRegistrosPersonas();
-        int posicion=numeroRegistro * bytesP.total.getBytes();
+    public void  guardarPersona (Persona p,int pos)throws ExcepcionDiario {
+        if(pos<0){throw new ExcepcionDiario("Debe escribir en una posicion correcta del archivo");}else{
+        int posicion=pos * bytesP.total.getBytes();
         try {
             flujo = new RandomAccessFile(diario, "rw");
             flujo.seek(posicion);
@@ -83,33 +85,64 @@ public class FicheroDiario /*extends Diario*/{
             flujo.seek(posicion+bytesP.esc.getBytes());
             flujo.writeChars("\n");
         }catch(FileNotFoundException efnf){}catch (IOException e){}
+        }
     }
 
-    /*cabecera: void guardarMascota(Mascota m)
-    descripcion: procedimiento que guardara una mascota en el archivo de diarioMascota
-    entradas: objeto mascota
+    /*cabecera: void guardarMascota(Mascota m, int pos)
+    descripcion: procedimiento que guardara una mascota en el archivo de diarioMascota en la posicion indicada por parametros
+    entradas: objeto mascota, un entero
+    precondiciones:ninguna
+    postcondiciones:ninguna,  en caso de la posicion no ser valida se lanzara una ExcepcionDiario
+    * */
+    public void guardarmascota(Mascota m,int pos)throws ExcepcionDiario {
+        if (pos < 0) {
+            throw new ExcepcionDiario("Debe escribir en una posicion correcta del archivo");
+        } else {
+            int posicion = pos * bytesM.total.getBytes();
+            try {
+                flujo = new RandomAccessFile(diarioMascota, "rw");
+                flujo.seek(posicion);
+                flujo.writeBytes(m.getNombre());
+                flujo.seek(posicion + bytesM.f.getBytes());
+                flujo.writeBytes(m.getFechaNacimiento().toString());
+                flujo.seek(posicion + bytesM.sex.getBytes());
+                flujo.writeBytes(Character.toString(m.getSexo()));
+                flujo.seek(posicion + bytesM.raz.getBytes());
+                flujo.writeBytes(m.getRaza());
+                flujo.seek(posicion + bytesM.esp.getBytes());
+                flujo.writeBytes(m.getEspecie());
+                flujo.seek(posicion + bytesM.esc.getBytes());
+                flujo.writeChars("\n");
+            } catch (FileNotFoundException efnf) {
+            } catch (IOException e) {
+            }
+        }
+    }
+
+    /*cabecera:void modificarPersona(int pos)
+    * */
+    @Deprecated
+    public void modificarPersona(int pos){
+
+        System.out.println("No funca");
+
+    }
+
+    /*cabecera: public void modificarAtributosPersona(String atributo,int at,int pos)
+    descripcion: procedimiento que modificara el atributo deseado de una persona
+    entradas: String , dos enteros
     precondiciones:ninguna
     * */
-    public void guardarmascota(Mascota m){
+    public void modificarAtributosPersona(String atributo,int at,int pos)throws ExcepcionDiario{
+        if((at<1 || at>9)&&(pos<0)){throw new ExcepcionDiario("");}else{
 
-        numeroRegistro=contarRegistrosMascotas();
-        int posicion=numeroRegistro * bytesM.total.getBytes();
-        try {
-            flujo = new RandomAccessFile(diarioMascota, "rw");
-            flujo.seek(posicion);
-            flujo.writeBytes(m.getNombre());
-            flujo.seek(posicion+bytesM.f.getBytes());
-            flujo.writeBytes(m.getFechaNacimiento().toString());
-            flujo.seek(posicion+bytesM.sex.getBytes());
-            flujo.writeBytes(Character.toString(m.getSexo()));
-            flujo.seek(posicion+bytesM.raz.getBytes());
-            flujo.writeBytes(m.getRaza());
-            flujo.seek(posicion+bytesM.esp.getBytes());
-            flujo.writeBytes(m.getEspecie());
-            flujo.seek(posicion+bytesM.esc.getBytes());
-            flujo.writeChars("\n");
-        }catch(FileNotFoundException efnf){}catch (IOException e){}
+
+
+        }
     }
+    /*
+    * */
+    private int pasarNumeroAtributo(int pos){return bytesM.nom.getBytes();}
 
 
     /*cabecera: void validarAtributosPersona(Persona p)

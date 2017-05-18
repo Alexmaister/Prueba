@@ -8,14 +8,17 @@ import java.util.*;
  */
 abstract class Diario {
 
-    public abstract void guardarPersona(Persona p);
-    public abstract void guardarMascota(Mascota m);
+    public abstract void guardarPersona(Persona p,int pos);
+    public abstract void guardarMascota(Mascota m,int pos);
+    @Deprecated
     public abstract void modificarPersona(int pos);
-    public abstract void modificarAtributoPersona(int pos);
+
+    public abstract void modificarAtributosPersona(String atributo,int at,int pos);
+    @Deprecated
     public abstract void modificarMascota(int pos);
-    public abstract void modificarAtributoMascota(int pos);
-    public abstract void borrarPersona(int pos);
-    public abstract void borrarMascota(int pos);
+    public abstract void modificarAtributosMascota(String atributo,int at,int pos);
+    public abstract void marcarPersona(int pos);
+    public abstract void marcarMascota(int pos);
     public abstract void mostarDiario();
     public abstract void mostrarDiarioMascota();
     public abstract Persona obtenerPersona(int pos);
