@@ -15,7 +15,7 @@ public class GestionTiempo {
 
     public GestionTiempo(){
         tiempo=new GregorianCalendar();
-        fecha=new Fecha();
+        fecha=obtenerFecha();
 
     }
     public Fecha obtenerFecha(){

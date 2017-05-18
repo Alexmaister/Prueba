@@ -10,11 +10,14 @@ import Clases.*;
 public class ParaLog {
     public static void main (String... a){
         GestionTiempo gt=new GestionTiempo();
-        gt.pintarFecha();
-        System.out.println(gt.obtenerFecha().toString());
+      //  gt.pintarFecha();
+      //  System.out.println(gt.obtenerFecha().toString());
 
         FicheroLog log=new FicheroLog();
         log.evento(new Persona(),true);
-        log.mostrarLog('p');
+        log.evento(new Persona(),true);
+        log.evento(new Persona(),true);
+        Fecha f=new Fecha(17,5,2017);
+        int i=log.mostrarLog('p',f);
     }
 }

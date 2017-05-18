@@ -42,7 +42,7 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
     public Fecha(int d, int m, int a) {
 
         this();
-        if (!validarFecha(d, m, a)) {
+        if (validarFecha(d, m, a)) {
             this.dia = d;
             this.mes = m;
             this.año = a;
