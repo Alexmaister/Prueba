@@ -102,10 +102,12 @@ public class FicheroMaster extends Master{
     salidas: un array de personas
     postcondiciones: se devolvera asociaso al nombre un array con todas las personas del archivo master
     * */
-    public Persona[] obtenerPersonas(){
-
+    public ArrayList<Persona> obtenerPersonas(){
+        ArrayList<Persona> p=new ArrayList<Persona>();
         Map<Persona,ArrayList<Mascota>> map=obtenerRelaciones();
-        Persona[] p= (Persona[]) map.keySet().toArray();
+        for(Persona aux:map.keySet())
+        p.add(aux);
+
         return p;
     }
     /*cabecera: ArrayList<Mascota> obtenerMascotas(Persona p)
@@ -138,5 +140,14 @@ public class FicheroMaster extends Master{
         }catch(FileNotFoundException e){}
 
      return 0;
+    }
+
+    public int buscarPersona(Persona p){
+        int pos=-1;
+        ArrayList<Persona> pl=obtenerPersonas();
+        for(Persona aux:pl)
+            if(aux.compareTo(p)==0)
+                pos=pl.indexOf(aux);
+        return pos;
     }
 }

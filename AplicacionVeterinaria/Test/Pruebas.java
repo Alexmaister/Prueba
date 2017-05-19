@@ -19,8 +19,6 @@ public class Pruebas {
         mapa1.mostrarMapa();
         mapa1.mostrarMascotasPersona(1);*/
 
-        Map<Persona,ArrayList<Mascota>> map=new TreeMap<Persona,ArrayList<Mascota>>();
-        Persona p=new Persona();
-        Mascota m=new Mascota();
+      System.out.println(String.format("%-10s","012345678")+"9");
     }
 }

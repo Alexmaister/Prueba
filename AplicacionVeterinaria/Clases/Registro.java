@@ -8,7 +8,7 @@ public class Registro<T ,C> implements Serializable{
     private static final long serialVersionUID=1L;
     private T var;
     private C acc;
-
+//public static void main(String...a){}
     public Registro(){
 
         var=(T)new Persona();

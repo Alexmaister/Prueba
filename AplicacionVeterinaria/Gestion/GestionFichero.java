@@ -2,69 +2,58 @@ package Gestion;
 import java.io.*;
 import java.util.*;
 import Clases.*;
-import Excepciones.ExcepcionPersona;
+import Excepciones.*;
+import GestionFicheros.*;
 
 
 /**
  * Created by Ale on 05/04/2017.
  */
 public class GestionFichero {
-
-    private File fichero;
-
-    public GestionFichero(){
-        this.fichero=new File("ArchivoPorDefecto.txt");
-    }
-
-    public File getFichero(){
-        return this.fichero;
-    }
-    public void setFichero(String path){
-        this.fichero=new File(path);
-    }
-
-    /*cabecera:public void guardarPersona(Persona p)
-    descripcion: procedimiento que guardara en el archivo local de la clase
-    la persona introducida por parametros, si no se establecio nombre del fichero se utilizara el por defecto
-    entradas:un objecto Persona
+    FicheroDiario diario=new FicheroDiario();
+    FicheroMaster master=new FicheroMaster();
+    FicheroLog log=new FicheroLog();
+    /*cabecera: void cargarDiario()
+    descripcion: procedimiento que cargara el archivo diario con las personas y  mascotas que haya en Master
     * */
-    public void guardarPersona(Persona p){
-
-        try {
-            FileWriter escritor=new FileWriter(this.fichero,true);
-
-            escritor.write(p.toString()+"\n");
-            escritor.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+    public void cargarDiario(){
+        ArrayList<Persona> p=null;
+        ArrayList<Mascota> m=null;
+        p=master.obtenerPersonas();
+        for(int i=0;i<p.size();i++)
+            try {
+                diario.guardarPersona(p.get(i),i);
+            } catch (ExcepcionDiario excepcionDiario) {}
     }
 
-    public static void main(String... a){
-        GestionFichero gf=new GestionFichero();
-        gf.guardarPersona(new Persona());
-        gf.guardarPersona(new Persona());
-        gf.guardarPersona(new Persona());
-        System.out.println(gf.cargarPersonas().toString());
+    /*cabecera: void actualizarMaster()
+    descripcion: procedimiento que actualizara el Master con las modificaciones del Diario, y las registrara en el log
+    * */
+    public void actualizarMaster(){
+
+        log.actualizarLogPersona(obtenerRegistros());
     }
+      /*cabecera: ArrayList<Registro<Persona,Character>> obtenerRegistros()
+    descripcion: funcion que obtendra los registros para poder actualizar el log
+    * */
+    private ArrayList<Registro<Persona,Character>> obtenerRegistros(){
+        Persona p=null;
+        ArrayList<Persona> pld=new ArrayList<Persona>();
+        ArrayList<Persona> plm=new ArrayList<Persona>();
+        ArrayList<Registro<Persona,Character>> reg=new ArrayList<Registro<Persona,Character>>();
+        ArrayList<Mascota> m=new ArrayList<Mascota>();
 
-    public List<Persona> cargarPersonas() {
-        List<Persona> lista = new ArrayList<Persona>();
-        try {
-            Scanner lector = new Scanner(this.getFichero());
+        pld=diario.obtenerPersonas();
+        plm=master.obtenerPersonas();
+        for(Persona aux:pld)
+            if(!plm.contains(aux))
+                reg.add(new Registro<Persona,Character>(aux,'A'));
+        pld=diario.obtenerPersonasMarcadas();
+        for(Persona aux:pld)
+            if(plm.contains(aux))
+                reg.add(new Registro<Persona,Character>(aux,'B'));
 
-            while (lector.hasNext()) {
-                try {
-                    lista.add(new Persona((String) lector.nextLine()));
-                } catch (ExcepcionPersona e) {
-                }
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return lista;
+        return reg;
+
     }
-
 }

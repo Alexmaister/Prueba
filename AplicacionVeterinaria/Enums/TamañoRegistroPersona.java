@@ -5,16 +5,16 @@ package Enums;
  */
 public enum TamañoRegistroPersona {
     nom(0),
-    ape (20),
-    f(40),
-    DNI(50),
-    Tl(59),
-    Mvl(68),
-    Direc(76),
-    codP(96),
-    nac(101),
-    esc(104),
-    total(106);
+    ape (21),
+    f(42),
+    DNI(51),
+    Tl(61),
+    Mvl(71),
+    Direc(81),
+    codP(102),
+    nac(107),
+    esc(110),
+    total(112);
 
 
     private final int bytes;

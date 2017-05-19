@@ -64,7 +64,7 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
         if(atributos.size()!=3){
             throw new ExcepcionFecha("¡¡Error!!:El numero de atributos es diferente de 3");
         }else{
-            d=Integer.parseInt((String) atributos.get(0));
+            d=(int)Integer.parseInt((String) atributos.get(0));
             m=Integer.parseInt((String) atributos.get(1));
             a=Integer.parseInt((String) atributos.get(2));
             if(validarFecha(d,m,a)){

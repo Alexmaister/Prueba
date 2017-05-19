@@ -197,5 +197,16 @@ public class FicheroLog extends Log{
 
         return error;
     }
+    /*cabecera: public void actualizarLogPersona(ArrayList<Registro<Persona,Character>> pl)
+    descripcion:procedimiento que acualizara el log con una lista de eventos eventos
+    entradas: ArrayList<Registro<Persona,Character>>
+    precondiciones: ningunA
+    * */
+    public void actualizarLogPersona(ArrayList<Registro<Persona,Character>> pl){
 
+        for(Registro<Persona,Character> aux:pl)
+            if(aux.obtenerAccion()=='A')
+                eventoP(new Registro<Persona,Character>(aux.obtenerObjeto(),'a'));
+            else eventoP(new Registro<Persona,Character>(aux.obtenerObjeto(),'b'));
+    }
 }
