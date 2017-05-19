@@ -12,9 +12,9 @@ public enum TamañoRegistroPersona {
     Mvl(71),
     Direc(81),
     codP(102),
-    nac(107),
-    esc(110),
-    total(112);
+    nac(108),
+    esc(111),
+    total(113);
 
 
     private final int bytes;

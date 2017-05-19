@@ -26,8 +26,10 @@ public class FicheroMaster extends Master{
     public void guardarRelacion(Map<Persona,ArrayList<Mascota>> relacion) {
     gmapa.setMapa(relacion);
        try {
-           escritor= new FileWriter(master,true);
-           escritor.write(gmapa.mapaACadena());
+
+               escritor = new FileWriter(master, true);
+               escritor.write(gmapa.mapaACadena());
+
        }catch (IOException e){
            System.out.println(e);
        }finally{
@@ -45,7 +47,10 @@ public class FicheroMaster extends Master{
     public Map<Persona,ArrayList<Mascota>> obtenerRelaciones(){
        String aux=null;
        String[] s={""};
-       Map<Persona,ArrayList<Mascota>> relacion=new LinkedHashMap<Persona,ArrayList<Mascota>>();
+       ArrayList<Mascota> m=new ArrayList<Mascota>();
+       Map<Persona,ArrayList<Mascota>> relacion=new TreeMap<Persona,ArrayList<Mascota>>();
+        Map<Persona,ArrayList<Mascota>> relacionAux=new TreeMap<Persona,ArrayList<Mascota>>();
+       ArrayList<Map<Persona,ArrayList<Mascota>>> l=new ArrayList<Map<Persona,ArrayList<Mascota>>>();
        try {
            lector = new Scanner(master);
                while (lector.hasNext()) {
@@ -61,6 +66,12 @@ public class FicheroMaster extends Master{
            System.out.println(e);
        }finally{
            lector.close();
+       }
+
+       for(Map.Entry<Persona,ArrayList<Mascota>> aux3:relacion.entrySet()) {
+           relacionAux.put(aux3.getKey(),m);
+
+           l.add(relacionAux);
        }
         return relacion;
     }
@@ -142,6 +153,13 @@ public class FicheroMaster extends Master{
      return 0;
     }
 
+    /*cabcera: int buscarPersona(Persona p)
+    descripcion: funcion que devolvera la posicion de una persona
+    entradas: Persona
+    precondicones: ninguna
+    salidas : un entero
+    postcondiciones: se devolvera asociado al nombre un entero distinto de cero si hay errores si no 0
+    * */
     public int buscarPersona(Persona p){
         int pos=-1;
         ArrayList<Persona> pl=obtenerPersonas();
@@ -149,5 +167,19 @@ public class FicheroMaster extends Master{
             if(aux.compareTo(p)==0)
                 pos=pl.indexOf(aux);
         return pos;
+    }
+
+    /*cabecera:void borrarMaster()
+    * */
+    public void borrarMaster(){
+        master.delete();
+    }
+
+    /*cabecera void guardarRelaciones(ArrayList<Map<Persona,ArrayList<Mascota>>>()
+    * */
+    public void guardarRelaciones(ArrayList<Map<Persona,ArrayList<Mascota>>> map){
+
+        for(Map<Persona,ArrayList<Mascota>> aux:map)
+            guardarRelacion(aux);
     }
 }

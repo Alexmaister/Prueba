@@ -209,4 +209,39 @@ public class FicheroLog extends Log{
                 eventoP(new Registro<Persona,Character>(aux.obtenerObjeto(),'a'));
             else eventoP(new Registro<Persona,Character>(aux.obtenerObjeto(),'b'));
     }
+
+    /*cabecera: public ArrayList<Registro<Persona,Character>> obtenerRegistrosLog()
+    descripcion: funcion que devolvera todos los registros del fichero de log
+    salidas: Registro<Persona,Character>
+    postcondiciones: se devolvera asociado al nombre una lista con todos los registros
+    * */
+    public ArrayList<Registro<Persona,Character>> obtenerRegistrosLog(){
+        Registro<Persona,Character> reg;
+        ArrayList<Registro<Persona,Character>> regl=new ArrayList<Registro<Persona,Character>>();
+        String[] fecha=gt.obtenerFecha().toString().split("/");
+        int error=0;
+        Registro<Persona,Character> registro=null;
+        Persona p = null;
+        Character c=null;
+        try {
+
+            flujoEntrada = new FileInputStream(nombreFichero+fecha[0]+"-"+fecha[1]+"-"+fecha[2]+".dat");
+
+            lector = new ObjectInputStream(flujoEntrada) {@Override protected void readStreamHeader() {}};
+
+            try {
+                while ( (reg=new Registro<Persona,Character>((Registro<Persona,Character>)lector.readObject()))!=null ) {
+                    regl.add(reg);
+
+                }
+                lector.close();
+                flujoEntrada.close();
+            } catch (ClassNotFoundException e) {
+                error = 5;
+            }
+        } catch (IOException e) {
+            error = 1;
+        }
+        return regl;
+    }
 }

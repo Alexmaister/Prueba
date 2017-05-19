@@ -30,9 +30,46 @@ public class GestionFichero {
     descripcion: procedimiento que actualizara el Master con las modificaciones del Diario, y las registrara en el log
     * */
     public void actualizarMaster(){
+        ArrayList<Persona> pl=null;
+        ArrayList<Map<Persona,ArrayList<Mascota>>> map=null;
+        Map<Persona,ArrayList<Mascota>> aux=new TreeMap<Persona,ArrayList<Mascota>>();
+        Map<Persona,ArrayList<Mascota>> aux2=null;
+        Map<Persona,ArrayList<Mascota>> aux5=null;
+        Persona aux1=null;
+        ArrayList<Mascota> ms=new ArrayList<Mascota>();
+
+        ArrayList<Registro<Persona,Character>> auxR=log.obtenerRegistrosLog();
 
         log.actualizarLogPersona(obtenerRegistros());
+
+        aux.putAll((Map<Persona,ArrayList<Mascota>>) master.obtenerRelaciones());
+
+        for(int i=0;i<aux.size();i++) {
+            aux5.put((Persona)aux.keySet().,ms);
+            map.add(aux5);
+        }
+
+        for(Registro<Persona,Character> reg:auxR)
+        if(reg.obtenerAccion()=='A') {
+            pl.add(reg.obtenerObjeto());
+        }else{
+            aux1=reg.obtenerObjeto();
+            aux2=new TreeMap<Persona,ArrayList<Mascota>>();
+            aux2.put(aux1,ms);
+            map.remove(new LinkedHashMap<Persona,ArrayList<Mascota>>(aux2));
+        }
+
+        for(Persona p: pl) {
+            aux2 = new TreeMap<Persona, ArrayList<Mascota>>();
+            aux2.put(p, ms);
+            map.add(aux2);
+        }
+        master.borrarMaster();
+        master.guardarRelaciones(map);
+
     }
+
+
       /*cabecera: ArrayList<Registro<Persona,Character>> obtenerRegistros()
     descripcion: funcion que obtendra los registros para poder actualizar el log
     * */
