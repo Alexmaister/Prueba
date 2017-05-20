@@ -244,4 +244,6 @@ public class FicheroLog extends Log{
         }
         return regl;
     }
+
+
 }

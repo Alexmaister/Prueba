@@ -30,6 +30,10 @@ public class GestionFichero {
             try {
                 diario.guardarPersona(p.get(i),i);
             } catch (ExcepcionDiario excepcionDiario) {}
+        if(!new File("Diario.txt").exists())
+            try {
+                diario.guardarPersona(new Persona(),0);
+            } catch (ExcepcionDiario excepcionDiario) {}
     }
 
     /*cabecera: void actualizarMaster()
@@ -43,8 +47,9 @@ public class GestionFichero {
         ArrayList<Mascota> ms=new ArrayList<Mascota>();
         Map<Persona,ArrayList<Mascota>> map=new HashMap<Persona,ArrayList<Mascota>>();
 
+     /*   if(!(new File("Master.txt").exists()))master.crear();
         //cargamos personas del master
-        master.obtenerPersonas().forEach(p->pl.add(p));
+        master.obtenerPersonas().forEach(p->pl.add(p));*/
         //tenemos que cargar el log
         cargarLog();
 
@@ -55,7 +60,7 @@ public class GestionFichero {
         for(Registro<Persona,Character> aux:listaR)
             if(Character.toUpperCase(aux.obtenerAccion())=='A') {
 
-                pl.forEach(p->{if(aux.obtenerObjeto().compareTo(p)!=0)plAux.add(aux.obtenerObjeto());});
+                plAux.add(aux.obtenerObjeto());
             }
 
         //borramos el master
@@ -75,6 +80,8 @@ public class GestionFichero {
                 });
         //insertamos todas las relaciones en el master
         master.guardarRelaciones(lmap);
+        if(!new File("Master.txt").exists())
+            master.guardarRelacion(new HashMap<Persona,ArrayList<Mascota>>());
         //volvemos a cargar el diario de nuevo
         cargarDiario();
     }

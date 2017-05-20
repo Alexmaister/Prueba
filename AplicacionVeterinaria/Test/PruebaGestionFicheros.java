@@ -9,8 +9,8 @@ public class PruebaGestionFicheros {
     public static void main(String... a){
         GestionFichero gf=new GestionFichero();
 
-      // gf.cargarDiario();
+ // gf.cargarDiario();
 
-       gf.actualizar();
+   gf.actualizar();
     }
 }

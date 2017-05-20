@@ -32,9 +32,9 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
     //constructor por defecto
     public Fecha(){
 
-        this.dia=1;
-        this.mes=1;
-        this.año=1990;
+        this.dia=0;
+        this.mes=0;
+        this.año=0;
 
 
     }
@@ -57,23 +57,27 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
     }
 
     //constructor por Cadena
-    public Fecha(String fecha)throws ExcepcionFecha{
+    public Fecha(String fecha)throws ExcepcionFecha {
         this();
-        List atributos=Arrays.asList(fecha.split("/"));
-        int d,m,a;
-        if(atributos.size()!=3){
+        List atributos = Arrays.asList(fecha.split("/"));
+        int d = 0, m = 0, a = 0;
+        if (atributos.size() != 3) {
             throw new ExcepcionFecha("¡¡Error!!:El numero de atributos es diferente de 3");
-        }else{
-            d=(int)Integer.parseInt((String) atributos.get(0));
-            m=Integer.parseInt((String) atributos.get(1));
-            a=Integer.parseInt((String) atributos.get(2));
-            if(validarFecha(d,m,a)){
-                this.dia=d;
-                this.mes=m;
-                this.año=a;
-            }else throw new ExcepcionFecha("La fecha no es valida");
-        }
+        } else {
+            if (Character.isDigit(atributos.get(0).toString().charAt(0))) {
+                d = Integer.parseInt((String) atributos.get(0));
+                m = Integer.parseInt((String) atributos.get(1));
+                a = Integer.parseInt((String) atributos.get(2));
 
+                if (validarFecha(this.dia, this.mes, this.año)) {
+                    if (validarFecha(d, m, a)) {
+                        this.dia = d;
+                        this.mes = m;
+                        this.año = a;
+                    } else throw new ExcepcionFecha("La fecha no es valida");
+                }
+            }
+        }
     }
 
     //metodos modificadores
@@ -179,7 +183,7 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
     @Override
     public String toString(){
 
-        return this.getDia()+"/"+getMes()+"/"+this.getAño();
+        return (this.getDia()+"/"+getMes()+"/"+this.getAño()).toString();
     }
 
     @Override

@@ -423,4 +423,9 @@ public class FicheroDiario extends Diario{
         this.diario.delete();
         this.diario=new File("Diario.txt");
     }
+    /*cabecera: void crear()
+* */
+    public void crear(){
+        this.diario=new File("Diario.txt");
+    }
 }

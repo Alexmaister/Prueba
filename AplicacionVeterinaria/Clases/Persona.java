@@ -46,15 +46,15 @@ public class Persona implements Cloneable,Comparable<Persona>,Serializable {
     private String nacionalidad;
     //constructor por defecto
     public Persona(){
-        this.nombre="Default";
+        this.nombre=" ";
         this.apellidos=" ";
-        this.fechaNac=new Fecha(1,1,1900);
-        this.DNI="12345678A";
+        try {this.fechaNac=new Fecha(" / / ");} catch (ExcepcionFecha excepcionFecha) {}
+        this.DNI=" ";
         this.telefono=" ";
         this.telefonoMovil=" ";
-        this.direccion="Desconocida";
-        this.codPostal="11111";
-        this.nacionalidad="Desconocida";
+        this.direccion=" ";
+        this.codPostal=" ";
+        this.nacionalidad=" ";
     }
     public Persona(String n, String a, String dni, Fecha f, String tlf, String tlfm, String d, String cp, String nacionalidad){
         this.nombre=n;
