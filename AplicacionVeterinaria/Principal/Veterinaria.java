@@ -37,6 +37,8 @@ public class Veterinaria extends JFrame {
         Dimension dimension=pantalla.getScreenSize();
         //colocamos ventana en el centro de la pantalla y de tamaño la mitad de la pantalla
         setBounds((int)dimension.getWidth()/4,(int)dimension.getHeight()/4,(int)dimension.getWidth()/2,(int)dimension.getHeight()/2); //alto y ancho de la pantalla
+        //le ponemos un icono de un gato :)
+        setIconImage(pantalla.getImage("gsto.jpg"));
     }
 
     public static void main(String... a){
