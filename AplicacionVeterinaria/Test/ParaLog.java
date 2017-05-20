@@ -14,8 +14,8 @@ public class ParaLog {
       //  System.out.println(gt.obtenerFecha().toString());
         Registro<Registro<String,Mascota>,Character> registro= new Registro<Registro<String,Mascota>,Character>();
         FicheroLog log=new FicheroLog();
-        log.eventoM(new Registro<Registro<String,Mascota>,Character>( new Registro<String,Mascota>(new Persona().getDNI(),new Mascota()),'A') );
-        log.eventoM(new Registro<Registro<String,Mascota>,Character>( new Registro<String,Mascota>(new Persona().getDNI(),new Mascota()),'A') );
-        int i=log.mostrarLog('m',gt.obtenerFecha());
+      //  log.eventoM(new Registro<Registro<String,Mascota>,Character>( new Registro<String,Mascota>(new Persona().getDNI(),new Mascota()),'A') );
+       // log.eventoM(new Registro<Registro<String,Mascota>,Character>( new Registro<String,Mascota>(new Persona().getDNI(),new Mascota()),'A') );
+        int i=log.mostrarLog('p',gt.obtenerFecha());
     }
 }

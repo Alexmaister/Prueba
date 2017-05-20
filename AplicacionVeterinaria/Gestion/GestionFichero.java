@@ -13,9 +13,14 @@ public class GestionFichero {
     FicheroDiario diario=new FicheroDiario();
     FicheroMaster master=new FicheroMaster();
     FicheroLog log=new FicheroLog();
+    GestionTiempo tiempo=new GestionTiempo();
     /*cabecera: void cargarDiario()
     descripcion: procedimiento que cargara el archivo diario con las personas y  mascotas que haya en Master
     * */
+
+
+
+
     public void cargarDiario(){
         ArrayList<Persona> p=null;
         ArrayList<Mascota> m=null;
@@ -29,44 +34,48 @@ public class GestionFichero {
     /*cabecera: void actualizarMaster()
     descripcion: procedimiento que actualizara el Master con las modificaciones del Diario, y las registrara en el log
     * */
-    public void actualizarMaster(){
-        ArrayList<Persona> pl=null;
-        ArrayList<Map<Persona,ArrayList<Mascota>>> map=null;
-        Map<Persona,ArrayList<Mascota>> aux=new TreeMap<Persona,ArrayList<Mascota>>();
-        Map<Persona,ArrayList<Mascota>> aux2=null;
-        Map<Persona,ArrayList<Mascota>> aux5=null;
+    public void actualizar(){
         Persona aux1=null;
+        ArrayList<Persona> pl=new ArrayList<Persona>();
+        ArrayList<Map<Persona,ArrayList<Mascota>>> lmap=new ArrayList<Map<Persona,ArrayList<Mascota>>>();
         ArrayList<Mascota> ms=new ArrayList<Mascota>();
+        Map<Persona,ArrayList<Mascota>> map=new HashMap<Persona,ArrayList<Mascota>>();
 
-        ArrayList<Registro<Persona,Character>> auxR=log.obtenerRegistrosLog();
+        //cargamos personas del master
+        master.obtenerPersonas().forEach(p->pl.add(p));
+        //tenemos que cargar el log
+        cargarLog();
 
-        log.actualizarLogPersona(obtenerRegistros());
+        //cargamos todos los registros del log , altas y bajas
+        ArrayList<Registro<Persona,Character>> listaR=log.obtenerRegistrosLog();
+        //quitamos todos los que sean bajas y las altas las insertamos en la lista de personas si no estan ya
+        for(Registro<Persona,Character> aux:listaR)
+            if(aux.obtenerAccion()=='B') {
+                pl.forEach(p->{if(aux.obtenerObjeto().compareTo(p)==0)pl.remove(aux.obtenerObjeto());});
+                listaR.remove(aux);
+            }else {
+                pl.forEach(p->{if(aux.obtenerObjeto().compareTo(p)!=0)pl.add(aux.obtenerObjeto());});
+            }
 
-        aux.putAll((Map<Persona,ArrayList<Mascota>>) master.obtenerRelaciones());
-
-        for(int i=0;i<aux.size();i++) {
-            aux5.put((Persona)aux.keySet().,ms);
-            map.add(aux5);
-        }
-
-        for(Registro<Persona,Character> reg:auxR)
-        if(reg.obtenerAccion()=='A') {
-            pl.add(reg.obtenerObjeto());
-        }else{
-            aux1=reg.obtenerObjeto();
-            aux2=new TreeMap<Persona,ArrayList<Mascota>>();
-            aux2.put(aux1,ms);
-            map.remove(new LinkedHashMap<Persona,ArrayList<Mascota>>(aux2));
-        }
-
-        for(Persona p: pl) {
-            aux2 = new TreeMap<Persona, ArrayList<Mascota>>();
-            aux2.put(p, ms);
-            map.add(aux2);
-        }
+        //borramos el master
         master.borrarMaster();
-        master.guardarRelaciones(map);
 
+        //añadimos las personas a un mapa con mascotas y todas ellas en una lista para guardarlas en master
+        /*for(Persona aux:pl) {
+            map=new HashMap<Persona,ArrayList<Mascota>>();
+            map.put(new Persona(aux), ms);
+            lmap.add(map);
+        }*/
+        pl.forEach(p->map.put(p,ms));
+        map.forEach((p,m)->{
+            Map<Persona,ArrayList<Mascota>> map1=new HashMap<Persona,ArrayList<Mascota>>();
+            map1.put(p,m);
+            lmap.add(map1);
+                });
+        //insertamos todas las relaciones en el master
+        master.guardarRelaciones(lmap);
+        //volvemos a cargar el diario de nuevo
+        cargarDiario();
     }
 
 
@@ -92,5 +101,20 @@ public class GestionFichero {
 
         return reg;
 
+    }
+
+    /*cabecera: void cargarLog()
+    descripcion:procedimiento que cargara el log con las personas actuales del diario ***proximamente tmb mascotas****
+    * */
+    private void cargarLog(){
+        ArrayList<Registro<Persona,Character>> lregA=new ArrayList<Registro<Persona,Character>>();
+        ArrayList<Registro<Persona,Character>> lregB=new ArrayList<Registro<Persona,Character>>();
+
+        //madreee
+        diario.obtenerPersonas().forEach((p)->lregA.add(new Registro(p,'A')));
+        log.actualizarLogPersona(lregA);
+
+        diario.obtenerPersonasMarcadas().forEach((p)->lregB.add(new Registro(p,'B')));
+        log.actualizarLogPersona(lregB);
     }
 }

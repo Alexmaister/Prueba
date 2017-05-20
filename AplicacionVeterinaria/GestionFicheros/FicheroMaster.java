@@ -95,13 +95,14 @@ public class FicheroMaster extends Master{
         s = mapa.split("-");
         try {
             p = new Persona(s[0]);
+            if(s.length>1){
             s2 = s[1].split(",");
             for (int i=0;i<s2.length;i++) {
                 m=new Mascota(s2[i]);
                 lista.add(m);
 
 
-                }
+                }}
             }catch (ExcepcionPersona ep) {
             }catch(ExcepcionMascota em){}
 
