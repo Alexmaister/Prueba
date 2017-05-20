@@ -34,7 +34,7 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
 
         this.dia=0;
         this.mes=0;
-        this.año=0;
+        this.año=1000;
 
 
     }
@@ -65,9 +65,9 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
             throw new ExcepcionFecha("¡¡Error!!:El numero de atributos es diferente de 3");
         } else {
             if (Character.isDigit(atributos.get(0).toString().charAt(0))) {
-                d = Integer.parseInt((String) atributos.get(0));
-                m = Integer.parseInt((String) atributos.get(1));
-                a = Integer.parseInt((String) atributos.get(2));
+                d = Integer.parseInt(atributos.get(0).toString());
+                m = Integer.parseInt(atributos.get(1).toString());
+                a = Integer.parseInt(atributos.get(2).toString());
 
                 if (validarFecha(this.dia, this.mes, this.año)) {
                     if (validarFecha(d, m, a)) {

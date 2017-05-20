@@ -80,6 +80,7 @@ public class FicheroDiario extends Diario{
             flujo.writeBytes(",");
             flujo.seek(posicion+bytesP.f.getBytes());
             flujo.writeBytes(p.getFechaNac().toString());
+            flujo.seek(posicion+bytesP.DNI.getBytes()-1);
             flujo.writeBytes(",");
             flujo.seek(posicion+bytesP.DNI.getBytes());
             flujo.writeBytes(p.getDNI());

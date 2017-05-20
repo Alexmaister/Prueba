@@ -14,13 +14,15 @@ public class GestionFichero {
     FicheroMaster master=new FicheroMaster();
     FicheroLog log=new FicheroLog();
     GestionTiempo tiempo=new GestionTiempo();
+
+   public FicheroDiario getFichero(){
+       return this.diario;
+   }
+
+
     /*cabecera: void cargarDiario()
     descripcion: procedimiento que cargara el archivo diario con las personas y  mascotas que haya en Master
     * */
-
-
-
-
     public void cargarDiario(){
         ArrayList<Persona> p=null;
         ArrayList<Mascota> m=null;
@@ -30,10 +32,12 @@ public class GestionFichero {
             try {
                 diario.guardarPersona(p.get(i),i);
             } catch (ExcepcionDiario excepcionDiario) {}
-        if(!new File("Diario.txt").exists())
+        if(!(new File("Diario.txt").exists())) {
             try {
-                diario.guardarPersona(new Persona(),0);
-            } catch (ExcepcionDiario excepcionDiario) {}
+                diario.guardarPersona(new Persona(), 0);
+            } catch (ExcepcionDiario excepcionDiario) {
+            }
+        }
     }
 
     /*cabecera: void actualizarMaster()
