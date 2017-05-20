@@ -92,9 +92,7 @@ public class Persona implements Cloneable,Comparable<Persona>,Serializable {
            this.setApellidos((String)atributos.get(1));
            try {
                this.setFechaNac(new Fecha((String)atributos.get(2)));
-           } catch (ExcepcionFecha excepcionFecha) {
-               System.out.println(excepcionFecha);
-           }
+           } catch (ExcepcionFecha excepcionFecha) {}
            if(((String)atributos.get(3)).matches("[0-9]{8}[A-Z]")){
                this.setDNI((String)atributos.get(3));
            }else throw new ExcepcionPersona("El formato del DNI es incorrecto");

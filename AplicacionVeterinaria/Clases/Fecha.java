@@ -32,9 +32,9 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
     //constructor por defecto
     public Fecha(){
 
-        this.dia=0;
-        this.mes=0;
-        this.año=1000;
+        this.dia=1;
+        this.mes=1;
+        this.año=1900;
 
 
     }
@@ -68,14 +68,11 @@ public class Fecha implements Cloneable,Comparable<Fecha>,Serializable{
                 d = Integer.parseInt(atributos.get(0).toString());
                 m = Integer.parseInt(atributos.get(1).toString());
                 a = Integer.parseInt(atributos.get(2).toString());
-
-                if (validarFecha(this.dia, this.mes, this.año)) {
                     if (validarFecha(d, m, a)) {
                         this.dia = d;
                         this.mes = m;
                         this.año = a;
                     } else throw new ExcepcionFecha("La fecha no es valida");
-                }
             }
         }
     }
