@@ -1,8 +1,7 @@
 package Principal;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
+
 
 /**
  * Created by aortiz on 03/04/2017.
@@ -26,15 +25,18 @@ public class Veterinaria extends JFrame {
 
     public Veterinaria(){
         setVisible(true);//por defecto es false
-        setSize(1000,500);// por defecto 0,0
-        setLocation(2500,200);// por defecto 0,0
+       // setSize(1000,500);// por defecto 0,0
+        //setLocation(2500,200);// por defecto 0,0
         //setBound sirve x los dos anteriores
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //setIconImage(new Image() );
         setTitle("Veterinaria");
         setResizable(false);//por defecto es true
-        setExtendedState(Frame.MAXIMIZED_BOTH);//pantalla completa , se abre asi
-
+        //setExtendedState(Frame.MAXIMIZED_BOTH);//pantalla completa , se abre asi
+        Toolkit pantalla =Toolkit.getDefaultToolkit();//propiedades de donde coorro la aplicacion
+        Dimension dimension=pantalla.getScreenSize();
+        //colocamos ventana en el centro de la pantalla y de tamaño la mitad de la pantalla
+        setBounds((int)dimension.getWidth()/4,(int)dimension.getHeight()/4,(int)dimension.getWidth()/2,(int)dimension.getHeight()/2); //alto y ancho de la pantalla
     }
 
     public static void main(String... a){
