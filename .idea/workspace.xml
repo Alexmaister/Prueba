@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922e663e-f838-406d-81dd-108d140df89f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FicheroLogPersonas20-5-2017.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFichero.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Gestion/GestionFichero.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroDiario.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroDiario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroLog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroMaster.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/GestionFicheros/FicheroMaster.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Test/ParaLog.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Test/ParaLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Test/PruebaDiario.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Test/PruebaDiario.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Veterinaria/Test/PruebasMAster.class" afterPath="$PROJECT_DIR$/out/production/Veterinaria/Test/PruebasMAster.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Excepciones/ExcepcionDiario.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Excepciones/ExcepcionDiario.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroMaster.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroMaster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java" afterPath="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diario.txt" afterPath="$PROJECT_DIR$/Diario.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Master.txt" afterPath="$PROJECT_DIR$/Master.txt" />
     </list>
@@ -70,7 +68,6 @@
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PersonaTest.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionMapaClienteMascota.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/MascotaTest.java" />
-        <option value="$PROJECT_DIR$/Master.txt" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Mascota.java" />
         <option value="$PROJECT_DIR$/Diario.dat" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionTiempo.java" />
@@ -82,17 +79,18 @@
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionClientes.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Master.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaDiario.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Diario.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Enums/TamañoRegistroPersona.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Clases/Registro.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Excepciones/ExcepcionDiario.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java" />
+        <option value="$PROJECT_DIR$/Master.txt" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroMaster.java" />
         <option value="$PROJECT_DIR$/Diario.txt" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java" />
-        <option value="$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java" />
+        <option value="$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java" />
         <option value="$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java" />
       </list>
     </option>
@@ -185,43 +183,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="GestionFicheros" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Veterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AplicacionVeterinaria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Gestion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AplicacionVeterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Comparadores" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Veterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AplicacionVeterinaria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Clases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -745,8 +725,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.PruebaGestionFicheros" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ParaLog" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PruebasMAster" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PruebasMAster" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ParaLog" />
         <item index="3" class="java.lang.String" itemvalue="Application.ExcepcionDiario" />
         <item index="4" class="java.lang.String" itemvalue="Application.Registro" />
       </list>
@@ -775,7 +755,7 @@
       <workItem from="1495095870164" duration="4217000" />
       <workItem from="1495154179558" duration="14829000" />
       <workItem from="1495174653216" duration="4236000" />
-      <workItem from="1495244743074" duration="8675000" />
+      <workItem from="1495244743074" duration="10998000" />
     </task>
     <task id="LOCAL-00001" summary="o">
       <created>1493365260818</created>
@@ -798,11 +778,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495079719546</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fu.. fuf fufu funcio nes l. l la. laa lam llla mmba&#10;funcio nes la lamb --a">
+      <created>1495255068271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495255068271</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92888000" />
+    <option name="totallyTimeSpent" value="95211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,8 +818,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18923241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32725322" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -844,7 +832,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -864,16 +851,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39806867" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32725322" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32618025" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33280757" sideWeight="0.49307036" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33261803" sideWeight="0.49307036" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18740849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32725322" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -889,31 +876,32 @@
     <MESSAGE value="o" />
     <MESSAGE value="Perfe buen avance" />
     <MESSAGE value="Terminando clase de diario , queda poco" />
-    <option name="LAST_COMMIT_MESSAGE" value="Terminando clase de diario , queda poco" />
+    <MESSAGE value="Fu.. fuf fufu funcio nes l. l la. laa lam llla mmba&#10;funcio nes la lamb --a" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fu.. fuf fufu funcio nes l. l la. laa lam llla mmba&#10;funcio nes la lamb --a" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Test/MascotaTest.java</url>
           <line>34</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -922,14 +910,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/ClasesAbstractas/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1112,20 +1092,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Clases/Registro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,27 +1107,6 @@
         <state relative-caret-position="174">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="104" column="18" lean-forward="false" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#FicheroMaster#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,66 +1126,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java">
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#427#463#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/jre/lib/rt.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="463" column="0" lean-forward="false" selection-start-line="463" selection-start-column="0" selection-end-line="463" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java">
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="56" column="101" lean-forward="false" selection-start-line="56" selection-start-column="101" selection-end-line="56" selection-end-column="101" />
+        <state relative-caret-position="617">
+          <caret line="189" column="43" lean-forward="false" selection-start-line="189" selection-start-column="43" selection-end-line="189" selection-end-column="43" />
+          <folding>
+            <element signature="docComment;class#FicheroMaster#0" expanded="false" />
+            <element signature="e#1699#1727#0" expanded="true" />
+            <element signature="e#1794#1822#0" expanded="true" />
+            <element signature="e#6710#6711#0" expanded="true" />
+            <element signature="e#6760#6761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebasMAster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1101#1110#0" expanded="true" />
-            <element signature="e#1183#1216#0" expanded="true" />
-            <element signature="e#1263#1272#0" expanded="true" />
-            <element signature="e#1331#1359#0" expanded="true" />
-            <element signature="e#2613#2641#0" expanded="true" />
-            <element signature="e#3199#3208#0" expanded="true" />
-            <element signature="e#3256#3265#0" expanded="true" />
-            <element signature="e#3333#3362#0" expanded="true" />
-            <element signature="e#3408#3417#0" expanded="true" />
-            <element signature="e#4091#4120#0" expanded="true" />
-            <element signature="e#4190#4219#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="194" column="17" lean-forward="false" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diario.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1203">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Master.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
+          <caret line="0" column="458" lean-forward="false" selection-start-line="0" selection-start-column="458" selection-end-line="0" selection-end-column="458" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/ParaLog.java">
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Gestion/GestionFichero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="256">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
           <folding>
-            <element signature="e#427#463#0" expanded="true" />
+            <element signature="e#1127#1136#0" expanded="true" />
+            <element signature="e#1186#1195#0" expanded="true" />
+            <element signature="e#1268#1301#0" expanded="true" />
+            <element signature="e#1348#1357#0" expanded="true" />
+            <element signature="e#1416#1444#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Diario.txt">
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/Test/PruebaGestionFicheros.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="111" lean-forward="false" selection-start-line="2" selection-start-column="111" selection-end-line="2" selection-end-column="111" />
+        <state relative-caret-position="377">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroLog.java">
+    <entry file="file://$PROJECT_DIR$/AplicacionVeterinaria/GestionFicheros/FicheroDiario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="194" column="17" lean-forward="false" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="336">
+          <caret line="424" column="5" lean-forward="true" selection-start-line="424" selection-start-column="5" selection-end-line="424" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

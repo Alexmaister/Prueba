@@ -24,6 +24,7 @@ public class GestionFichero {
     public void cargarDiario(){
         ArrayList<Persona> p=null;
         ArrayList<Mascota> m=null;
+        diario.renovar();
         p=master.obtenerPersonas();
         for(int i=0;i<p.size();i++)
             try {
@@ -37,6 +38,7 @@ public class GestionFichero {
     public void actualizar(){
         Persona aux1=null;
         ArrayList<Persona> pl=new ArrayList<Persona>();
+        ArrayList<Persona> plAux=new ArrayList<Persona>();
         ArrayList<Map<Persona,ArrayList<Mascota>>> lmap=new ArrayList<Map<Persona,ArrayList<Mascota>>>();
         ArrayList<Mascota> ms=new ArrayList<Mascota>();
         Map<Persona,ArrayList<Mascota>> map=new HashMap<Persona,ArrayList<Mascota>>();
@@ -49,24 +51,23 @@ public class GestionFichero {
         //cargamos todos los registros del log , altas y bajas
         ArrayList<Registro<Persona,Character>> listaR=log.obtenerRegistrosLog();
         //quitamos todos los que sean bajas y las altas las insertamos en la lista de personas si no estan ya
+
         for(Registro<Persona,Character> aux:listaR)
-            if(aux.obtenerAccion()=='B') {
-                pl.forEach(p->{if(aux.obtenerObjeto().compareTo(p)==0)pl.remove(aux.obtenerObjeto());});
-                listaR.remove(aux);
-            }else {
-                pl.forEach(p->{if(aux.obtenerObjeto().compareTo(p)!=0)pl.add(aux.obtenerObjeto());});
+            if(Character.toUpperCase(aux.obtenerAccion())=='A') {
+
+                pl.forEach(p->{if(aux.obtenerObjeto().compareTo(p)!=0)plAux.add(aux.obtenerObjeto());});
             }
 
         //borramos el master
         master.borrarMaster();
-
+        master.crear();
         //añadimos las personas a un mapa con mascotas y todas ellas en una lista para guardarlas en master
         /*for(Persona aux:pl) {
             map=new HashMap<Persona,ArrayList<Mascota>>();
             map.put(new Persona(aux), ms);
             lmap.add(map);
         }*/
-        pl.forEach(p->map.put(p,ms));
+        plAux.forEach(p->map.put(p,ms));
         map.forEach((p,m)->{
             Map<Persona,ArrayList<Mascota>> map1=new HashMap<Persona,ArrayList<Mascota>>();
             map1.put(p,m);

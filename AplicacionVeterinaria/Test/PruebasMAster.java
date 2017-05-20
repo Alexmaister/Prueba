@@ -19,10 +19,8 @@ public class PruebasMAster {
         rel.put(p,l);
         master.guardarRelacion(rel);
         //ps=master.leerPersonas();
-        rel=master.obtenerRelaciones();
-        gs.setMapa(rel);
+      ///  rel=master.obtenerRelaciones();
 
-        gs.mostrarMapa();
         master.mostrarMaster();
     }
 }

@@ -415,5 +415,12 @@ public class FicheroDiario extends Diario{
         return pl;
 
     }
-
+    /*cabecera: void renovar()
+    descripcion: renueva el fichero
+    poscondiones: ninguna, el fichero quedara vacio
+    * */
+    public void renovar(){
+        this.diario.delete();
+        this.diario=new File("Diario.txt");
+    }
 }

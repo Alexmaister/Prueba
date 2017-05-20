@@ -48,8 +48,8 @@ public class FicheroMaster extends Master{
        String aux=null;
        String[] s={""};
        ArrayList<Mascota> m=new ArrayList<Mascota>();
-       Map<Persona,ArrayList<Mascota>> relacion=new TreeMap<Persona,ArrayList<Mascota>>();
-        Map<Persona,ArrayList<Mascota>> relacionAux=new TreeMap<Persona,ArrayList<Mascota>>();
+       Map<Persona,ArrayList<Mascota>> relacion=new HashMap<Persona,ArrayList<Mascota>>();
+        Map<Persona,ArrayList<Mascota>> relacionAux=new HashMap<Persona,ArrayList<Mascota>>();
        ArrayList<Map<Persona,ArrayList<Mascota>>> l=new ArrayList<Map<Persona,ArrayList<Mascota>>>();
        try {
            lector = new Scanner(master);
@@ -182,5 +182,11 @@ public class FicheroMaster extends Master{
 
         for(Map<Persona,ArrayList<Mascota>> aux:map)
             guardarRelacion(aux);
+    }
+    /*cabecera: void crear()
+    descripcion: creara el archivo master
+    * */
+    public void crear(){
+        this.master=new File("Master.txt");
     }
 }
